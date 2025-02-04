@@ -15,6 +15,7 @@ import { ThreeDBioCardDemo } from './BioCard.jsx';
 import { PinContainer } from '../ui/ThreeDPinCard.jsx';
 import { AnimatedPinDemo } from './ResumePinCard.jsx';
 import InfiniteSkills from './InfiniteSkills.jsx';
+import LightHeader from './LightHeader.jsx';
 
 function Home() {
   const timelineData = [
@@ -93,20 +94,20 @@ function Home() {
           
         {/* Hero Section with Shooting Stars */}
         <div className="h-[40rem] bg-black flex flex-col items-start justify-around relative w-full ">
-          <h2 className="absolute top-20 left-30 z-10 text-9xl md:text-9xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
+          <h2 className="absolute top-20 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
         BUILD
             
           </h2>
-          <h2 className="absolute top-50 left-30 z-10 text-7xl md:text-7xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
+          <h2 className="absolute top-50 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
           SOLVE
             
           </h2>
-          <h2 className="absolute top-70 left-30 z-10 text-4xl md:text-4xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
+          <h2 className="absolute top-80 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
           REPEAT
             
           </h2>
 
-          <TextGenerateEffect className='absolute top-85 left-30 ' words={"I don’t just code, I create solutions. If something’s missing, I build it. What started as a hobby became a passion for crafting tools that make life easier."}/>
+          <TextGenerateEffect className='absolute top-120 left-30 ' words={"I don’t just code, I create solutions. If something’s missing, I build it. What started as a hobby became a passion for crafting tools that make life easier."}/>
           <ShootingStars />
         </div>
 
