@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { CardDemo } from '../ui/SkillsCard';
 import { AnimatedTooltip } from "./AnimatedToolTip";
 import SkillsDisplay from "../Home/SkillsDisplay";
-
+import { StarsBackground } from '../ui/StarsBackground';
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
   const containerRef = useRef(null);
@@ -27,7 +27,7 @@ export const Timeline = ({ data }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full bg-black font-sans md:px-10"
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
@@ -108,6 +108,7 @@ export const Timeline = ({ data }) => {
             className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full" />
         </div>
       </div>
+      <StarsBackground />
     </div>
   );
 };
