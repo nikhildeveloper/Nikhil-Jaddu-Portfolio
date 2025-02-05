@@ -199,11 +199,15 @@ function Home() {
            <ShootingStars />
            {/* <StarsBackground /> */}
           
+           <div className='pb-50 pr-80'>
            <StickyScroll content={achievementsData} />
            {/* <ShootingStars /> */}
+           </div>
            
          </div>
        </div> 
+       
+
        
       
     </>
