@@ -16,6 +16,8 @@ import { PinContainer } from '../ui/ThreeDPinCard.jsx';
 import { AnimatedPinDemo } from './ResumePinCard.jsx';
 import InfiniteSkills from './InfiniteSkills.jsx';
 import LightHeader from './LightHeader.jsx';
+import Hero from './HeroCard.jsx';
+import AboutMe from './About.jsx';
 
 function Home() {
   const timelineData = [
@@ -83,42 +85,43 @@ function Home() {
 
   return (
     <>
-<div className="relative w-full h-[5rem] bg-black">
-  
+      <div className="relative w-full h-[2rem] bg-black">
+        
 
 
-  </div>
+      </div>
+      <div className='flex justify-center items-center bg-black'>
+        <Hero/>
+        {/* <SparklesPreview /> */}
+      </div>
+      <SparklesPreview />
           
       <div className='flex justify-center '>
-
-          
+      <AboutMe/>
+      <StarsBackground />
         {/* Hero Section with Shooting Stars */}
-        <div className="h-[40rem] bg-black flex flex-col items-start justify-around relative w-full ">
+        {/* <div className="h-[40rem] bg-black flex flex-col items-start justify-around relative w-full ">
           <h2 className="absolute top-20 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
-        BUILD
-            
+            BUILD
           </h2>
           <h2 className="absolute top-50 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
-          SOLVE
-            
+            SOLVE
           </h2>
           <h2 className="absolute top-80 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
-          REPEAT
-            
+            REPEAT 
           </h2>
-
           <TextGenerateEffect className='absolute top-120 left-30 ' words={"I don’t just code, I create solutions. If something’s missing, I build it. What started as a hobby became a passion for crafting tools that make life easier."}/>
           <ShootingStars />
-        </div>
+        </div> */}
 
-        <div className="h-[40rem] bg-black flex flex-col items-center justify-center relative w-full">
+
 
         <div className="h-[40rem] bg-black flex flex-col items-center justify-center relative w-full">
   
-  {/* 🔹 SparklesPreview in the Background */}
-          {/* <div className="absolute inset-0 flex justify-center items-center">
-            <SparklesPreview />
-          </div> */}
+          {/* 🔹 SparklesPreview in the Background */}
+                  {/* <div className="absolute inset-0 flex justify-center items-center">
+                    <SparklesPreview />
+                  </div> */}
 
           {/* 🔹 AnimatedPinDemo in the Foreground */}
           <div className="relative z-10">
@@ -128,7 +131,7 @@ function Home() {
         </div>
 
         
-       </div>
+
 
        <div className="absolute inset-0 flex justify-center items-center">
        <StarsBackground />

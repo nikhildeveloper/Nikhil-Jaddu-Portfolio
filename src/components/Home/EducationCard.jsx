@@ -103,7 +103,7 @@ export function ThreeDCardDemo() {
       {/* 🔹 Indiana University Bloomington Card */}
       <CardContainer className="inter-var">
         <CardBody
-          className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[35rem] h-auto rounded-xl p-6 border"
+          className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[35rem] h-auto rounded-xl p-6 border"
         >
           {/* 🔹 Image Stretched Fully from Left to Right */}
           <CardItem translateZ="100" className="w-full">
@@ -138,7 +138,7 @@ export function ThreeDCardDemo() {
       {/* 🔹 SRM University Card */}
       <CardContainer className="inter-var">
         <CardBody
-          className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[35rem] h-auto rounded-xl p-6 border"
+          className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[35rem] h-auto rounded-xl p-6 border"
         >
           {/* 🔹 Image Stretched Fully from Left to Right */}
           <CardItem translateZ="100" className="w-full">

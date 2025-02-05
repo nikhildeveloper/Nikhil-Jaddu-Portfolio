@@ -417,7 +417,7 @@ const Skeleton = () => {
             <Component className={className} />
           </Container>
           {/* Skill Name */}
-          <span className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+          <span className="mt-2 text-sm text-gray-300">
             {name}
           </span>
         </motion.div>
@@ -444,7 +444,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "max-w-sm w-full mx-auto p-0 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
+        "max-w-sm w-full mx-auto p-0 rounded-xl border bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >
@@ -457,7 +457,7 @@ export const CardTitle = ({ children, className }) => {
   return (
     <h3
       className={cn(
-        "text-lg font-semibold text-gray-800 p-5 dark:text-white py-2 ",
+        "text-lg font-semibold text-white py-2 ",
         className
       )}
     >
@@ -470,7 +470,7 @@ export const CardSkeletonContainer = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "h-[20rem] md:h-[20rem] rounded-xl z-40 bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)]",
+        "h-[20rem] md:h-[20rem] rounded-xl z-40 bg-[rgba(40,40,40,0.70)]",
         className
       )}
     >

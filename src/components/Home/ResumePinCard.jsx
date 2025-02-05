@@ -34,7 +34,7 @@ import { PinContainer } from "../ui/ThreeDPinCard.jsx";
 
 export function AnimatedPinDemo() {
   return (
-    <div className="h-[70rem] w-full flex items-center justify-center">
+    <div className=" w-full flex items-center justify-center mr-40">
       <PinContainer title="View Resume" href="https://twitter.com/mannupaaji">
         <div className="flex basis-full flex-col p-6 tracking-tight text-slate-100/50 sm:basis-1/2 w-[28rem] h-[28rem]">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold text-lg text-slate-100">
