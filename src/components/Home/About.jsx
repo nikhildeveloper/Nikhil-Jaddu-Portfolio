@@ -3,48 +3,33 @@ import { motion } from "framer-motion";
 const AboutMe = () => {
   return (
     <motion.div 
-      className="w-full flex justify-center items-center py-20 bg-black text-white"
-
+      className="w-full flex justify-center items-center py-12 px-4 sm:px-8 bg-black text-white"
     >
-      <div className="max-w-4xl mx-auto p-8 bg-black rounded-2xl shadow-lg ml-10 border-0">
+      <div className="w-full max-w-4xl mx-auto p-6 sm:p-8 bg-black rounded-2xl shadow-lg border-0">
         
         {/* Title */}
-        <h2 className="text-4xl font-bold text-accent  mb-6">
+        <h2 className="text-3xl sm:text-4xl font-bold text-accent mb-6 text-center md:text-left">
           About Me
         </h2>
 
         {/* Description */}
-        <p className="text-sm text-gray-300  leading-relaxed font-mono">
-        Hi! I'm Nikhil Sai Jaddu, a tech enthusiast who loves turning ideas into powerful software. I specialize in building sleek UIs with React, crafting efficient backends with Node.js & Java, and optimizing databases with PostgreSQL & MongoDB.
+        <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed font-mono text-center md:text-left">
+          Hi! I'm <span className="text-white font-semibold">Nikhil Sai Jaddu</span>, a tech enthusiast who loves turning ideas into powerful software. 
+          I specialize in building sleek UIs with <span className="text-white font-semibold">React</span>, crafting efficient backends with 
+          <span className="text-white font-semibold"> Node.js & Java</span>, and optimizing databases with 
+          <span className="text-white font-semibold"> PostgreSQL & MongoDB</span>.
 
-        Currently pursuing my Master’s in Computer Science at Indiana University, I wear multiple hats—teaching C & Unix as an Associate Instructor, developing web solutions at Indiana Daily Student, and previously engineering systems for FedEx at Wipro.
+          <br /><br />
 
-        I build, I optimize, I innovate—one line of code at a time. 🚀
+          Currently pursuing my <span className="text-white font-semibold">Master’s in Computer Science</span> at Indiana University, I wear multiple hats—
+          teaching <span className="text-white font-semibold">C & Unix</span> as an Associate Instructor, developing web solutions at 
+          <span className="text-white font-semibold"> Indiana Daily Student</span>, and previously engineering systems for <span className="text-white font-semibold">FedEx</span> at Wipro.
 
+          <br /><br />
+          
+          I build, I optimize, I innovate—one line of code at a time. 🚀
         </p>
 
-        {/* Roles */}
-        {/* <div className="mt-6 space-y-3 text-center">
-          <p className="text-lg text-gray-400">
-            🎓 **Master’s in Computer Science** at <span className="text-white">Indiana University</span>
-          </p>
-          <p className="text-lg text-gray-400">
-            👨‍🏫 **Associate Instructor** - Teaching C & Unix
-          </p>
-          <p className="text-lg text-gray-400">
-            💻 **Web Developer** - Indiana Daily Student
-          </p>
-          <p className="text-lg text-gray-400">
-            🚀 **Ex-Software Engineer** at Wipro (FedEx)
-          </p>
-        </div> */}
-
-        {/* Catchphrase */}
-        {/* <div className="mt-8 text-center">
-          <h3 className="text-xl font-semibold text-white">
-            "I build, I optimize, I innovate—one line of code at a time." 🚀
-          </h3>
-        </div> */}
       </div>
     </motion.div>
   );

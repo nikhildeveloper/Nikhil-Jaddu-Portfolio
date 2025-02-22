@@ -18,6 +18,8 @@ import InfiniteSkills from './InfiniteSkills.jsx';
 import LightHeader from './LightHeader.jsx';
 import Hero from './HeroCard.jsx';
 import AboutMe from './About.jsx';
+import CardGrid from './CardGrid.jsx';
+
 
 function Home() {
   const timelineData = [
@@ -28,9 +30,12 @@ function Home() {
         description: "Designed and developed responsive web pages using React, HTML, and TailwindCSS for Indiana Daily Student.",
         duration: "Aug 2024 - Present",
         highlights: [
-          "Built and maintained ad blocks across multiple web pages.",
-          "Enhanced page loading speed by optimizing assets.",
-          "Collaborated with designers and editors to ensure UX consistency."
+        
+      "Developed and maintained scalable, responsive web applications using React.js, HTML5, TailwindCSS, and JavaScript, ensuring cross-browser and cross-device compatibility.",
+      "Optimized ad block loading strategies with asynchronous API calls, React hooks (useEffect, useState), and rendering pipeline enhancements, increasing user retention by 30% on high-traffic pages.",
+      "Designed and integrated RESTful API endpoints with PostgreSQL and MongoDB, enabling real-time data updates and efficient retrieval for web features.",
+      "Enhanced page loading speed by optimizing assets, implementing lazy loading, and leveraging React memoization techniques (React.memo, useCallback).",
+      "Collaborated with designers and editors to ensure UX consistency and accessibility compliance across all platforms."
         ]
       }
     },
@@ -39,24 +44,25 @@ function Home() {
       content: {
         role: "Teaching Assistant",
         description: "Assisted in teaching System Programming with C and Unix.",
-        duration: "Jan 2024 - May 2024",
+        duration: "Aug 2024 - Present",
         highlights: [
-          "Helped students debug complex C programs.",
-          "Graded assignments and provided constructive feedback.",
-          "Organized hands-on lab sessions on Unix tools and shell scripting."
+          "Provided in-depth instruction in C and Unix, educating over 100+ students across multiple semesters and fostering a strong technical foundation.",
+          "Served as a Graduate Associate Instructor for A538: Network Technologies and System Administration, mentoring graduate instructors and guiding them in technical writing and system administration concepts.",
+          
         ]
       }
     },
     {
       title: "Wipro",
       content: {
-        role: "Software Engineer",
+        role: "Software Developer",
         description: "Worked at Wipro, collaborating with FedEx on a Transportation Management System.",
-        duration: "Jun 2020 - Jul 2023",
+        duration: "Jan 2022 - Jul 2023",
         highlights: [
-          "Developed APIs to streamline data retrieval.",
-          "Automated user account creation, reducing setup time by 30%.",
-          "Implemented robust security protocols for API integrations."
+          "Collaborated with FedEx as a Full Stack Developer to design, develop, and maintain the Transportation Management System, automating workflows and processing 10,000+ shipments monthly.",
+          "Optimized backend services using Java and RESTful APIs, integrating Oracle databases to enhance data retrieval speed by 30% and support scalability.",
+          "Built over 15 responsive user interfaces using JavaScript, HTML5, and CSS3, ensuring seamless performance on all major devices.",
+          "Facilitated within an Agile/Scrum framework, utilizing Git for version control and collaboration, ensuring timely delivery of high-quality software."
         ]
       }
     }
@@ -82,139 +88,300 @@ function Home() {
     {id:4,content:"hello",},
     {id:5,content:"hello",}
   ]
-
+   
   return (
-    <>
-      <div className="relative w-full h-[2rem] bg-black">
+    // backup
+    // <>
+    //   <div className="relative w-full h-[2rem] bg-black">
         
 
 
-      </div>
-      <div className='flex justify-center items-center bg-black'>
-        <Hero/>
-        {/* <SparklesPreview /> */}
-      </div>
-      <SparklesPreview />
-          
-      <div className='flex justify-center '>
-      <AboutMe/>
-      <StarsBackground />
-        {/* Hero Section with Shooting Stars */}
-        {/* <div className="h-[40rem] bg-black flex flex-col items-start justify-around relative w-full ">
-          <h2 className="absolute top-20 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
-            BUILD
-          </h2>
-          <h2 className="absolute top-50 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
-            SOLVE
-          </h2>
-          <h2 className="absolute top-80 left-30 z-10 text-8xl md:text-8xl max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
-            REPEAT 
-          </h2>
-          <TextGenerateEffect className='absolute top-120 left-30 ' words={"I don’t just code, I create solutions. If something’s missing, I build it. What started as a hobby became a passion for crafting tools that make life easier."}/>
-          <ShootingStars />
-        </div> */}
+    //   </div>
+    //   <div className='flex justify-center items-center bg-black'>
+    //     <Hero/>
+    //     {/* <SparklesPreview /> */}
+    //   </div>
+    //   <SparklesPreview />
+    //   <StarsBackground />
+    //   <div className="flex flex-col md:flex-row items-center justify-center w-full bg-black px-6 sm:px-12 py-10">
+    //     {/* ✅ About Me - Appears FIRST on mobile */}
+    //     <div className="w-full md:w-1/2 mb-10 md:mb-0">
+    //       <AboutMe />
+    //     </div>
 
+    //     {/* ✅ Card Section - Appears BELOW on mobile */}
+    //     <div className="w-full md:w-1/2 flex justify-center">
+    //       <AnimatedPinDemo />
+    //     </div>
 
+    //     {/* ✅ Background Effect (Correctly Positioned) */}
+    //     <div className="absolute inset-0 -z-10">
+    //       <StarsBackground />
+    //     </div>
+    //   </div>
 
-        <div className="h-[40rem] bg-black flex flex-col items-center justify-center relative w-full">
-  
-          {/* 🔹 SparklesPreview in the Background */}
-                  {/* <div className="absolute inset-0 flex justify-center items-center">
-                    <SparklesPreview />
-                  </div> */}
-
-          {/* 🔹 AnimatedPinDemo in the Foreground */}
-          <div className="relative z-10">
-            <AnimatedPinDemo />
-          </div>
-
-        </div>
-
-        
-
-
-       <div className="absolute inset-0 flex justify-center items-center">
-       <StarsBackground />
-       </div>
-
-       </div>      
-
-            
-            
           
             
-      {/* Timeline Section */}
-      <div className="relative z-10 ">
-      <Timeline data={timelineData} />
-      </div>
+    //   {/* Timeline Section */}
+    //   <div className="relative z-10 ">
+    //   <Timeline data={timelineData} />
+    //   </div>
 
-      {/* Scrolling Container with Shooting Stars */}
-       <div className="relative w-full overflow-hidden">
-         {/* Shooting Stars & Background inside the Container */}
-         <ShootingStars />
+    //   {/* Scrolling Container with Shooting Stars */}
+    //    <div className="relative w-full overflow-hidden">
+    //      {/* Shooting Stars & Background inside the Container */}
+    //      <ShootingStars />
         
 
-         {/* ContainerScroll Component */}
-         <ContainerScroll titleComponent={"Projects"}>
-           <LayoutGrid />
-         </ContainerScroll>
+    //      {/* ContainerScroll Component */}
+    //      <ContainerScroll titleComponent={"Projects"}>
+    //        <LayoutGrid />
+    //      </ContainerScroll>
        
 
-     </div>
-     <InfiniteSkills/>
-      <div>
-      <h2 className="absolute z-10 text-3xl md:text-5xl ml-30 font-bold text-white mt-20">
+    //  </div>
+    //  <InfiniteSkills/>
+    //   <div>
+    //   <h2 className="absolute z-10 text-3xl md:text-5xl ml-30 font-bold text-white mt-20">
 
-        Education
-        </h2>
-        <div className="h-[60rem] bg-black flex flex-col items-center justify-center relative w-full">
+    //     Education
+    //     </h2>
+    //     <div className="h-[60rem] bg-black flex flex-col items-center justify-center relative w-full">
 
-        <ShootingStars />
-        <StarsBackground />
+    //     <ShootingStars />
+    //     <StarsBackground />
         
-        <ThreeDCardDemo/>
+    //     <ThreeDCardDemo/>
           
-        </div>
-      </div>
+    //     </div>
+    //   </div>
 
 
-       <div className="relative w-full bg-black overflow-hidden">
+    //    <div className="relative w-full bg-black overflow-hidden">
        
       
-     <div className="relative w-full h-auto flex flex-col items-center justify-center">
+    //  <div className="relative w-full h-auto flex flex-col items-center justify-center">
 
 
      
-        <div className="relative w-full h-[30rem] flex items-center justify-center">
-        <div className="absolute inset-0 flex justify-center items-center">
-       <StarsBackground />
-       </div>
-             <BackgroundLines svgOptions={{ duration: 15 }} />
+    //     <div className="relative w-full h-[30rem] flex items-center justify-center">
+    //     <div className="absolute inset-0 flex justify-center items-center">
+    //    <StarsBackground />
+    //    </div>
+    //          <BackgroundLines svgOptions={{ duration: 15 }} />
 
-             <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
+    //          <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
 
-               Achievements
-             </h2>
-           </div>
-           <ShootingStars />
-           {/* <StarsBackground /> */}
+    //            Achievements
+    //          </h2>
+    //        </div>
+    //        <ShootingStars />
+    //        {/* <StarsBackground /> */}
           
-           <div className='pb-50 pr-80'>
-           <StickyScroll content={achievementsData} />
-           {/* <ShootingStars /> */}
-           </div>
+    //        <div className='pb-50 pr-80'>
+    //        <StickyScroll content={achievementsData} />
+    //        {/* <ShootingStars /> */}
+    //        </div>
            
-         </div>
-       </div> 
+    //      </div>
+    //    </div> 
        
 
        
       
-    </>
+    // </>
+    <>
+    {/* ✅ Global Background (Prevents Line Issue) */}
+    <div className="relative w-full bg-black">
+      <StarsBackground />
+      <ShootingStars />
+      {/* ✅ Hero Section */}
+      <div className="flex justify-center items-center">
+        <Hero />
+      </div>
+      {/* ✅ Wrap in a div with proper alignment */}
+      <div className="w-full flex justify-start pl-4 sm:pl-1 md:pl-12">
+        <SparklesPreview />
+      </div>
+
+
+      {/* ✅ About Me Section */}
+      <div className="flex flex-col md:flex-row items-center justify-center w-full px-6 sm:px-12 py-10">
+        <div className="w-full md:w-1/2 mb-10 md:mb-0">
+          <AboutMe />
+        </div>
+        <div className="w-full md:w-1/2 flex justify-center">
+          <AnimatedPinDemo />
+        </div>
+      </div>
+
+      {/* ✅ Timeline Section */}
+      <div className="relative z-10">
+        <Timeline data={timelineData} />
+        
+      </div>
+
+      {/* ✅ Projects Section */}
+      {/* <div className="relative w-full overflow-hidden">
+        <ShootingStars />
+        <ContainerScroll titleComponent={"Projects"}>
+          <LayoutGrid />
+        </ContainerScroll>
+      </div> */}
+
+
+            {/* ✅ Projects Section */}
+      <div className="relative w-full overflow-hidden">
+        <ShootingStars />
+        <ContainerScroll titleComponent={"Projects"}>
+        <CardGrid/>
+        </ContainerScroll>
+      </div>
+
+      {/* ✅ Infinite Skills Section */}
+      <InfiniteSkills />
+
+      {/* ✅ Education Section */}
+      <div className="relative w-full flex flex-col items-center justify-center py-20">
+        <h2 className="text-3xl md:text-5xl font-bold text-white">
+          Education
+        </h2>
+        <ThreeDCardDemo />
+      </div>
+
+      {/* ✅ Ach */}
+      <div className="relative w-full bg-black overflow-hidden">
+        <div className="relative w-full h-auto flex flex-col items-center justify-center">     
+            <div className="relative w-full h-[30rem] flex items-center justify-center">
+              <div className="absolute inset-0 flex justify-center items-center">
+              <StarsBackground />
+              </div>
+              <BackgroundLines svgOptions={{ duration: 15 }} />
+              <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
+                Achievements
+              </h2>
+            </div>
+            <ShootingStars />
+            {/* <StarsBackground /> */}
+            <div className='pb-50 pr-80'>
+              <StickyScroll content={achievementsData} />
+              {/* <ShootingStars /> */}
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div className='bg-black'>
+      <div className="absolute inset-0 flex justify-center items-center">
+          <StarsBackground />
+      </div>
+     
+      <CardGrid/>
+      
+      </div>
+  </>
   );
 }
 
 export default Home;
 
 
+    // <>
+    //   <div className="relative w-full h-[2rem] bg-black">
+        
 
+
+    //   </div>
+    //   <div className='flex justify-center items-center bg-black'>
+    //     <Hero/>
+    //     {/* <SparklesPreview /> */}
+    //   </div>
+    //   <SparklesPreview />
+    //   <StarsBackground />
+    //   <div className="flex flex-col md:flex-row items-center justify-center w-full bg-black px-6 sm:px-12 py-10">
+    //     {/* ✅ About Me - Appears FIRST on mobile */}
+    //     <div className="w-full md:w-1/2 mb-10 md:mb-0">
+    //       <AboutMe />
+    //     </div>
+
+    //     {/* ✅ Card Section - Appears BELOW on mobile */}
+    //     <div className="w-full md:w-1/2 flex justify-center">
+    //       <AnimatedPinDemo />
+    //     </div>
+
+    //     {/* ✅ Background Effect (Correctly Positioned) */}
+    //     <div className="absolute inset-0 -z-10">
+    //       <StarsBackground />
+    //     </div>
+    //   </div>
+
+          
+            
+    //   {/* Timeline Section */}
+    //   <div className="relative z-10 ">
+    //   <Timeline data={timelineData} />
+    //   </div>
+
+    //   {/* Scrolling Container with Shooting Stars */}
+    //    <div className="relative w-full overflow-hidden">
+    //      {/* Shooting Stars & Background inside the Container */}
+    //      <ShootingStars />
+        
+
+    //      {/* ContainerScroll Component */}
+    //      <ContainerScroll titleComponent={"Projects"}>
+    //        <LayoutGrid />
+    //      </ContainerScroll>
+       
+
+    //  </div>
+    //  <InfiniteSkills/>
+    //   <div>
+    //   <h2 className="absolute z-10 text-3xl md:text-5xl ml-30 font-bold text-white mt-20">
+
+    //     Education
+    //     </h2>
+    //     <div className="h-[60rem] bg-black flex flex-col items-center justify-center relative w-full">
+
+    //     <ShootingStars />
+    //     <StarsBackground />
+        
+    //     <ThreeDCardDemo/>
+          
+    //     </div>
+    //   </div>
+
+
+    //    <div className="relative w-full bg-black overflow-hidden">
+       
+      
+    //  <div className="relative w-full h-auto flex flex-col items-center justify-center">
+
+
+     
+    //     <div className="relative w-full h-[30rem] flex items-center justify-center">
+    //     <div className="absolute inset-0 flex justify-center items-center">
+    //    <StarsBackground />
+    //    </div>
+    //          <BackgroundLines svgOptions={{ duration: 15 }} />
+
+    //          <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
+
+    //            Achievements
+    //          </h2>
+    //        </div>
+    //        <ShootingStars />
+    //        {/* <StarsBackground /> */}
+          
+    //        <div className='pb-50 pr-80'>
+    //        <StickyScroll content={achievementsData} />
+    //        {/* <ShootingStars /> */}
+    //        </div>
+           
+    //      </div>
+    //    </div> 
+       
+
+       
+      
+    // </>

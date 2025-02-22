@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { CardDemo } from '../ui/SkillsCard';
 import { AnimatedTooltip } from "./AnimatedToolTip";
-import SkillsDisplay from "../Home/SkillsDisplay";
+// import SkillsDisplay from "../Home/SkillsDisplay";
 import { StarsBackground } from '../ui/StarsBackground';
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -66,22 +66,36 @@ export const Timeline = ({ data }) => {
               <div className="glass-card p-6 rounded-2xl shadow-lg bg-opacity-50 border border-neutral-800 bg-neutral-900/50 backdrop-blur-md">
                 <div className="flex flex-col md:flex-row items-start gap-4">
                   {/* Left Column: Content */}
-                  <div className="w-full md:w-2/3">
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                      {item.content.role}
-                    </h3>
-                    <p className="text-sm text-neutral-400 italic mb-4">
-                      {item.content.duration}
-                    </p>
-                    <p className="text-base text-neutral-300 mb-4">
-                      {item.content.description}
-                    </p>
-                    <ul className="list-disc list-inside text-neutral-300 space-y-2">
-                      {item.content.highlights.map((highlight, idx) => (
-                        <li key={idx}>{highlight}</li>
-                      ))}
-                    </ul>
-                  </div>
+
+                  {/* Updated Description Section with Better Styling */}
+                <div className="w-full">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                    {item.content.role}
+                  </h3>
+                  <p className="text-sm text-neutral-400 italic mb-4">
+                    {item.content.duration}
+                  </p>
+
+                {/* ✅ Improved Description Formatting */}
+                <div className="space-y-3 text-neutral-300 text-1xl leading-relaxed">
+                  {item.content.description.split('. ').map((point, idx) => (
+                    point.trim() && (
+                      <div key={idx} className="flex items-start gap-2">
+                        <span className="text-purple-400">📌</span> 
+                        <span className="font-semibold text-white/90">{point}.</span>
+                      </div>
+                    )
+                  ))}
+                </div>
+
+                {/* ✅ Bullet Point Highlights */}
+                <ul className="mt-4 list-disc list-outside text-sm text-neutral-300 space-y-2">
+                  {item.content.highlights.map((highlight, idx) => (
+                    <li key={idx} className="leading-snug">{highlight}</li>
+                  ))}
+                </ul>
+              </div>
+
 
                   {/* Right Column: CardDemo */}
                   {/* <div className="w-full md:w-1/3">
@@ -89,7 +103,7 @@ export const Timeline = ({ data }) => {
                   </div> */}
                   
                 </div>
-                  <SkillsDisplay/>
+                  {/* <SkillsDisplay/> */}
               </div>
             </div>
           </div>

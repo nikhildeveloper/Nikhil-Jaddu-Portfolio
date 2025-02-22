@@ -8,12 +8,12 @@ export function SparklesPreview() {
   return (
     (<div
     
-      className=" w-full z-10 bg-black flex flex-col items-start justify-center overflow-hidden ">
+      className=" w-full z-10 bg-black flex flex-col items-start justify-center overflow-hidden px-4 sm:px-8 md:px-25">
       {/* <h1
         className="md:text-7xl text-2xl lg:text-3xl font-bold text-center text-white relative z-20">
         Nikhil Sai Jaddu
       </h1> */}
-      <div className="w-[40rem] h-40 relative">
+      <div className="w-[20rem] h-40 relative">
         {/* Gradients */}
         {/* <div
           className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -41,3 +41,4 @@ export function SparklesPreview() {
     </div>)
   );
 }
+
