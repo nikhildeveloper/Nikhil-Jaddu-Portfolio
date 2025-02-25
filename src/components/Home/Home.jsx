@@ -200,20 +200,33 @@ function Home() {
         <Hero />
       </div>
       {/* ✅ Wrap in a div with proper alignment */}
-      <div className="w-full flex justify-start pl-4 sm:pl-1 md:pl-12">
+      {/* <div className="w-full flex justify-start pl-4 sm:pl-1 md:pl-12 ">
         <SparklesPreview />
-      </div>
+      </div> */}
+{/* ✅ Wrapping Sparkles in a flex container to ensure alignment */}
+{/* ✅ Keep `max-w-8xl`, but limit internal width */}
+<div className="w-full flex justify-center md:justify-start max-w-8xl mx-auto px-6 sm:px-12">
+  <div className="w-full max-w-7xl flex items-center justify-center md:justify-start">
+    <SparklesPreview />
+  </div>
+</div>
+
+
+
 
 
       {/* ✅ About Me Section */}
-      <div className="flex flex-col md:flex-row items-center justify-center w-full px-6 sm:px-12 py-10">
-        <div className="w-full md:w-1/2 mb-10 md:mb-0">
-          <AboutMe />
-        </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <AnimatedPinDemo />
-        </div>
+
+    <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-8xl mx-auto px-6 sm:px-12 py-10 gap-y-10 md:gap-x-16">
+      <div className="w-full md:w-1/2 max-w-3xl flex justify-center md:justify-start">
+        <AboutMe />
       </div>
+      <div className="w-full md:w-1/2 max-w-3xl flex justify-center md:justify-end">
+        <AnimatedPinDemo />
+      </div>
+    </div>
+
+
 
       {/* ✅ Timeline Section */}
       <div className="relative z-10">
@@ -242,43 +255,53 @@ function Home() {
       <InfiniteSkills />
 
       {/* ✅ Education Section */}
-      <div className="relative w-full flex flex-col items-center justify-center py-20">
-        <h2 className="text-3xl md:text-5xl font-bold text-white">
+      <div className="relative w-full flex flex-col items-start justify-center py-10 px-6 sm:px-12">
+        {/* ✅ Education Heading - Aligned Left */}
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 mt-30 self-center text-center">
           Education
         </h2>
-        <ThreeDCardDemo />
+
+        {/* ✅ Keeps ThreeDCardDemo Centered */}
+        <div className="w-full flex justify-center">
+          <ThreeDCardDemo />
+        </div>
       </div>
 
-      {/* ✅ Ach */}
+
+      {/* ✅ Acheivements */}
       <div className="relative w-full bg-black overflow-hidden">
         <div className="relative w-full h-auto flex flex-col items-center justify-center">     
-            <div className="relative w-full h-[30rem] flex items-center justify-center">
+            <div className="relative w-full h-[10rem] flex items-center justify-center">
               <div className="absolute inset-0 flex justify-center items-center">
               <StarsBackground />
               </div>
               <BackgroundLines svgOptions={{ duration: 15 }} />
-              <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
+              <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white ">
                 Achievements
               </h2>
             </div>
             <ShootingStars />
             {/* <StarsBackground /> */}
-            <div className='pb-50 pr-80'>
+            <div className="flex justify-center items-center w-full">
+
               <StickyScroll content={achievementsData} />
-              {/* <ShootingStars /> */}
             </div>
+
+
           </div>
         </div> 
       </div>
 
-      <div className='bg-black'>
+      
+
+      {/* <div className='bg-black'>
       <div className="absolute inset-0 flex justify-center items-center">
           <StarsBackground />
       </div>
      
       <CardGrid/>
       
-      </div>
+      </div> */}
   </>
   );
 }

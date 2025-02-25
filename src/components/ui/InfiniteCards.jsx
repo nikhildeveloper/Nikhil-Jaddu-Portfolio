@@ -1,13 +1,8 @@
-import { cn } from "../../utils/cn";
+
+
 import React, { useEffect, useState } from "react";
 
-export const InfiniteMovingCards = ({
-  items,
-  direction = "left",
-  speed = "fast",
-  pauseOnHover = true,
-  className
-}) => {
+export const InfiniteMovingCards = ({ items, direction = "left", speed = "fast", pauseOnHover = true }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
   const [start, setStart] = useState(false);
@@ -20,7 +15,6 @@ export const InfiniteMovingCards = ({
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
-      // Duplicate items to create an infinite scroll effect
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         scrollerRef.current.appendChild(duplicatedItem);
@@ -45,11 +39,11 @@ export const InfiniteMovingCards = ({
     if (containerRef.current) {
       let duration;
       if (speed === "fast") {
-        duration = "20s";
+        duration = "10s";
       } else if (speed === "normal") {
-        duration = "40s";
+        duration = "30s";
       } else {
-        duration = "80s";
+        duration = "50s";
       }
       containerRef.current.style.setProperty("--animation-duration", duration);
     }
@@ -58,24 +52,17 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn(
-        "relative z-20 max-w-7xl overflow-hidden",
-        className
-      )}
+      className="relative z-20 w-full overflow-hidden"
       style={{
         maskImage:
-          "linear-gradient(to right, transparent, white 20%, white 80%, transparent)",
+          "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
         WebkitMaskImage:
-          "linear-gradient(to right, transparent, white 20%, white 80%, transparent)",
+          "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
       }}
     >
       <ul
         ref={scrollerRef}
-        className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap animate-scroll",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
-        )}
+        className="flex min-w-full shrink-0 gap-3 sm:gap-4 py-2 sm:py-4 w-max flex-nowrap animate-scroll"
         style={{
           display: "flex",
           animation: `scroll var(--animation-duration, 40s) linear infinite var(--animation-direction, forwards)`,
@@ -84,36 +71,24 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="w-[350px] max-w-full relative rounded-2xl border flex-shrink-0 border-white px-8 py-6 md:w-[450px]" // Added padding-bottom
+            className="w-[250px] sm:w-[300px] md:w-[350px] max-w-full relative rounded-2xl border border-white px-3 sm:px-6 py-3 sm:py-4 flex-shrink-0 h-auto min-h-[150px] flex flex-col justify-center"
             style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
+              background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
             }}
           >
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className="relative z-20 text-xl leading-[1.6] text-gray-100 font-normal">
+              <span className="relative z-20 text-sm sm:text-base text-gray-100 font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
-                  </span>
-                  <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
-                </span>
+              <div className="relative z-20 mt-2 sm:mt-4 flex flex-wrap justify-center items-center gap-2 sm:gap-4">
+                {item.title}
               </div>
             </blockquote>
           </li>
         ))}
       </ul>
-  
-      {/* Keyframe animation for smooth scrolling */}
+
+      {/* Keyframe animation */}
       <style>
         {`
           @keyframes scroll {
@@ -128,5 +103,4 @@ export const InfiniteMovingCards = ({
       </style>
     </div>
   );
-  
 };
