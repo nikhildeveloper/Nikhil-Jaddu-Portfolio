@@ -267,7 +267,7 @@ export const ContainerScroll = ({ titleComponent, children }) => {
     ],
     link: "your_tour_management_project_link",
     github: "your_tour_management_github_link",
-    thumbnail: "src/assets/TourManagement.jpeg",
+    thumbnail: "src/assets/tourmanagement.jpeg",
   },
   ];
   
