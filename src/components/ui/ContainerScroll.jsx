@@ -192,7 +192,7 @@ import {
 } from "react-icons/fa";
 
 // IMAGE LINKS
-import gipherImg from '../../../src/assets/gipher.jpeg'
+// import gipherImg from '../../../src/assets/gipher.jpeg'
 export const ContainerScroll = ({ titleComponent, children }) => {
 
 
