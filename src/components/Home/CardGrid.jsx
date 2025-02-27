@@ -5,7 +5,10 @@ import {
   } from "react-icons/fa";
 
 
-  import gipherprojectimg from '../../assets/gipher.jpeg'
+  import gipherprojectimg from '../../assets/gipherprojectimg.jpeg'
+  import tourmanagementprojectimg from '../../assets/tourmanagementprojectimg.jpeg'
+  import timetrackerprojectimg from '../../assets/timetrackerprojectimg.png'
+  import pocprojectimg from '../../assets/pocprojectimg.jpeg'
   const Projects = [
     {
       id: 1,
@@ -26,7 +29,7 @@ import {
       ],
       link: "your_tour_management_project_link",
       github: "your_tour_management_github_link",
-      thumbnail: gipherprojectimg,
+      thumbnail: tourmanagementprojectimg,
     },
     {
       id: 2,
@@ -37,7 +40,7 @@ import {
       ],
       link: "your_api_project_link",
       github: "your_api_github_link",
-      thumbnail: "src/assets/poc.jpeg",
+      thumbnail: pocprojectimg,
     },
     {
       id: 3,
@@ -59,7 +62,7 @@ import {
       ],
       link: "your_duclear_project_link",
       github: "your_duclear_github_link",
-      thumbnail: "src/assets/timetracker.png",
+      thumbnail: timetrackerprojectimg,
     }
   ];
   

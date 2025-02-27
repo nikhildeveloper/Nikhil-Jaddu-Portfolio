@@ -1,10 +1,13 @@
 
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/EducationCardContainer";
+import iulogo from '../../assets/iu-trident-logo.jpg';
+import srmlogo from '../../assets/srm-logo.png'
 
 const Image = ({ src, alt, ...props }) => (
   <img src={src} alt={alt} {...props} loading="lazy" />
 );
+
 
 export function ThreeDCardDemo() {
   return (
@@ -19,7 +22,7 @@ export function ThreeDCardDemo() {
           {/* 🔹 Image Stretched Fully from Left to Right */}
           <CardItem translateZ="100" className="w-full">
             <Image
-              src="src/assets/iu-trident-logo.jpg"
+              src={iulogo}
               height="1000"
               width="1000"
               className="w-full h-48 sm:h-64 object-cover rounded-xl"
@@ -56,7 +59,7 @@ export function ThreeDCardDemo() {
           {/* 🔹 Image Stretched Fully from Left to Right */}
           <CardItem translateZ="100" className="w-full">
             <Image
-              src="src/assets/srm-logo.png"
+              src={srmlogo}
               height="1000"
               width="1000"
               className="w-full h-48 sm:h-64 object-cover rounded-xl"

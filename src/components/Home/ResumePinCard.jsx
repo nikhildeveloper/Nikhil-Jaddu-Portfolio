@@ -30,7 +30,7 @@
 
 import React from "react";
 import { PinContainer } from "../ui/ThreeDPinCard.jsx";
-
+import profileimg from "../../assets/profileimg.jpg"
 // export function AnimatedPinDemo() {
 //   return (
 //     <div className="w-full flex items-center justify-center md:ml-10 md:mr-20 px-4 sm:px-8">
@@ -76,7 +76,7 @@ export function AnimatedPinDemo() {
           {/* ✅ Responsive Image Section */}
           <div className="flex flex-1 w-full rounded-xl mt-4 overflow-hidden">
             <img
-              src="src/assets/profile.JPG" // ✅ Replace with your actual image path
+              src= {profileimg} // ✅ Replace with your actual image path
               alt="Profile Background"
               className="w-full h-full object-cover rounded-xl max-h-52 sm:max-h-64 md:max-h-80"
             />

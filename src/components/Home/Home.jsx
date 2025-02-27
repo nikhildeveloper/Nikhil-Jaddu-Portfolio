@@ -20,6 +20,9 @@ import Hero from './HeroCard.jsx';
 import AboutMe from './About.jsx';
 import CardGrid from './CardGrid';
 
+import hackathon1 from '../../assets/hackathon1.jpeg';
+import hackathon2 from '../../assets/hackathon2.jpeg';
+
 
 function Home() {
   const timelineData = [
@@ -74,13 +77,13 @@ function Home() {
       title: "Ingineering Hackathon'24 | Luddy's Largest Hackathon",
       description: "Winner - Tackled a problem statement issued by ServiceNow: API for Point of Contact for Collaboration Framework.",
       content: "🥇 Ranked 1st out of 72 teams 🚀",
-      image: "src/assets/hack2.jpeg",  // Replace with actual image path
+      image: hackathon1,  // Replace with actual image path
     },
     {
       title: "Google Developer Student Club (GDSC) Hackathon",
       description: "2nd Runner Up - Developed an AI-powered system for waste management, featuring an automated sorting system that leverages advanced computer vision technologies.",
       content: "🧠 Achieved 94-96% accuracy with YOLO & Faster R-CNN ⚡",
-      image: "src/assets/hack1.jpeg",  // Replace with actual image path
+      image: hackathon2,  // Replace with actual image path
     },
   ];
   const Project=
