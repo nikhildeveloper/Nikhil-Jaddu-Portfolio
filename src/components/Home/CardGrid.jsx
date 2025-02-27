@@ -5,8 +5,7 @@ import {
   } from "react-icons/fa";
 
   // import tourManagementImg from '../../../src/assets/tourmanagement.jpeg'
-  // import gipherImg from '../../assets/gipher.jpeg'
-  import gipherImg from '../../../src/assets/gipher'
+  import gipherImg from '../../assets/gipher.jpeg'
   const Projects = [
     {
       id: 1,

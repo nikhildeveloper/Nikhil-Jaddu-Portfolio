@@ -18,7 +18,7 @@ import InfiniteSkills from './InfiniteSkills.jsx';
 import LightHeader from './LightHeader.jsx';
 import Hero from './HeroCard.jsx';
 import AboutMe from './About.jsx';
-import CardGrid from './CardGrid.jsx';
+import CardGrid from './CardGrid';
 
 
 function Home() {
