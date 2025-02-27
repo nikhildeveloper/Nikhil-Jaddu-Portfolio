@@ -190,6 +190,9 @@ import {
   FaGithub, FaExternalLinkAlt, FaServer, FaProjectDiagram, FaClock, FaReact, FaNodeJs, 
   FaDocker, FaDatabase, FaJava, FaAngular, FaJs, FaPython 
 } from "react-icons/fa";
+
+// IMAGE LINKS
+import gipherImg from '../../../src/assets/gipher.jpeg'
 export const ContainerScroll = ({ titleComponent, children }) => {
 
 
@@ -236,7 +239,7 @@ export const ContainerScroll = ({ titleComponent, children }) => {
       ],
       link: "your_gipher_project_link",
       github: "your_gipher_github_link",
-      thumbnail: "src/assets/Gipher.jpeg",
+      thumbnail: gipherImg,
     },
     {
       id: 4,
