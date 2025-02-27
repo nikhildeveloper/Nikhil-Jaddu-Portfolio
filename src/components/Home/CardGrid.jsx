@@ -4,7 +4,7 @@ import {
     FaDocker, FaDatabase, FaJava, FaAngular, FaJs, FaPython 
   } from "react-icons/fa";
 
-  import tourManagementImg from '../../assets/tourmanagement.jpeg'
+  import tourManagementImg from '../../../src/assets/tourmanagement.jpeg'
   import gipherImg from '../../assets/gipher.jpeg'
   const Projects = [
     {
