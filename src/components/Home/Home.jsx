@@ -6,7 +6,7 @@ import { StarsBackground } from '../ui/StarsBackground';
 import { ContainerScroll } from '../ui/ContainerScroll';
 import { LayoutGrid } from '../ui/LayoutGrid.jsx';
 import { ThreeDCardDemo } from './EducationCard.jsx';
-import { ExpandableCardDemo } from '../ui/ExpandableCard.jsx';
+// import { ExpandableCardDemo } from '../ui/ExpandableCard.jsx';
 import { StickyScroll } from '../ui/AcheivementsDisplay.jsx';
 import { BackgroundLines } from '../ui/ProjectHeader.jsx';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect.jsx';
