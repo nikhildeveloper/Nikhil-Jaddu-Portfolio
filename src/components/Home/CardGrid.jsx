@@ -4,8 +4,8 @@ import {
     FaDocker, FaDatabase, FaJava, FaAngular, FaJs, FaPython 
   } from "react-icons/fa";
 
-  // import tourManagementImg from '../../../src/assets/tourmanagement.jpeg'
-  import gipherImg from '../../assets/gipher.jpeg'
+
+  import gipherprojectimg from '../../assets/gipher.jpeg'
   const Projects = [
     {
       id: 1,
@@ -26,7 +26,7 @@ import {
       ],
       link: "your_tour_management_project_link",
       github: "your_tour_management_github_link",
-      thumbnail: gipherImg,
+      thumbnail: gipherprojectimg,
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ import {
       ],
       link: "your_gipher_project_link",
       github: "your_gipher_github_link",
-      thumbnail: gipherImg,
+      thumbnail: gipherprojectimg,
     },
     {
       id: 4,
