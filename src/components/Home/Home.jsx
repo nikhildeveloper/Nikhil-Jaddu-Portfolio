@@ -27,14 +27,14 @@ function Home() {
       title: "Indiana Daily Student",
       content: {
         role: "Web Developer",
-        description: "Designed and developed responsive web pages using React, HTML, and TailwindCSS for Indiana Daily Student.",
+        description: "Designed and developed responsive web pages for Indiana Daily Student",
         duration: "Aug 2024 - Present",
         highlights: [
         
-      "Developed and maintained scalable, responsive web applications using React.js, HTML5, TailwindCSS, and JavaScript, ensuring cross-browser and cross-device compatibility.",
-      "Optimized ad block loading strategies with asynchronous API calls, React hooks (useEffect, useState), and rendering pipeline enhancements, increasing user retention by 30% on high-traffic pages.",
-      "Designed and integrated RESTful API endpoints with PostgreSQL and MongoDB, enabling real-time data updates and efficient retrieval for web features.",
-      "Enhanced page loading speed by optimizing assets, implementing lazy loading, and leveraging React memoization techniques (React.memo, useCallback).",
+      "Developed and maintained scalable, responsive web applications using React.js, JavaScript and TailwindCSS, ensuring cross-browser and cross-device compatibility while enhancing performance and user experience. ",
+      "Optimized ad block loading strategies by implementing asynchronous API calls, React hooks rendering pipeline enhancements, lazy loading, and caching mechanisms, leading to a 60% increase in user retention on high-traffic pages.",
+      "Designed and integrated RESTful API endpoints with PostgreSQL, MongoDB, Express.js, and Redis, enabling real-time data updates, efficient retrieval, and seamless backend integration, improving database query efficiency by 40%.",
+      "Led the development of the IDS Legislation Tracker, leveraging React.js, Next.js, Node.js, Firebase Firestore, and Redux for state management, ensuring scalable buildouts and responsive UI design, reducing page load times by 35%.",
       "Collaborated with designers and editors to ensure UX consistency and accessibility compliance across all platforms."
         ]
       }
@@ -43,7 +43,7 @@ function Home() {
       title: "IUB",
       content: {
         role: "Teaching Assistant",
-        description: "Assisted in teaching System Programming with C and Unix.",
+        description: "Assisted in teaching System Programming with C and Unix, Network Administration",
         duration: "Aug 2024 - Present",
         highlights: [
           "Provided in-depth instruction in C and Unix, educating over 100+ students across multiple semesters and fostering a strong technical foundation.",
@@ -55,17 +55,19 @@ function Home() {
     {
       title: "Wipro",
       content: {
-        role: "Software Developer",
-        description: "Worked at Wipro, collaborating with FedEx on a Transportation Management System.",
-        duration: "Jan 2022 - Jul 2023",
+        role: "Software Engineer",
+        description: "Handled backend development using Java",
+        duration: "Jan 2022 - Aug 2023",
         highlights: [
-          "Collaborated with FedEx as a Full Stack Developer to design, develop, and maintain the Transportation Management System, automating workflows and processing 10,000+ shipments monthly.",
-          "Optimized backend services using Java and RESTful APIs, integrating Oracle databases to enhance data retrieval speed by 30% and support scalability.",
-          "Built over 15 responsive user interfaces using JavaScript, HTML5, and CSS3, ensuring seamless performance on all major devices.",
-          "Facilitated within an Agile/Scrum framework, utilizing Git for version control and collaboration, ensuring timely delivery of high-quality software."
+          "Collaborated with FedEx as a dedicated Full Stack Developer, actively contributing to the development and maintenance of the Transportation Management System (TMS), which efficiently processes over 10,000 shipments per month.",
+          "Boosted data retrieval efficiency by 30% by implementing Oracle PL/SQL stored procedures, indexing strategies, and partitioning techniques, leading to faster transactional queries and optimized database performance.",
+          "Developed and integrated RESTful APIs with FedEx’s logistics infrastructure, enabling seamless data exchange and real-time shipment tracking, improving delivery accuracy by 25%.",
+          "Implemented microservices architecture using Spring Boot, Kafka, and Docker, ensuring scalability, fault tolerance, and efficient asynchronous communication, which enhanced system resilience and reduced processing latency by 35%.",
+          "Implemented modern software development best practices including CI/CD pipelines (GitHub Actions, Jenkins) and containerization (Docker, Kubernetes), improving deployment efficiency and system reliability by 50%."
         ]
       }
-    }
+    },
+
   ];
   const achievementsData = [
     {
@@ -257,7 +259,7 @@ function Home() {
       {/* ✅ Education Section */}
       <div className="relative w-full flex flex-col items-start justify-center py-10 px-6 sm:px-12">
         {/* ✅ Education Heading - Aligned Left */}
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 mt-30 self-center text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 mt-40 self-center text-center">
           Education
         </h2>
 
