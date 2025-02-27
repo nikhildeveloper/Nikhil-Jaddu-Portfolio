@@ -26,7 +26,7 @@ import {
       ],
       link: "your_tour_management_project_link",
       github: "your_tour_management_github_link",
-      thumbnail: tourManagementImg,
+      thumbnail: gipherImg,
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ import {
       ],
       link: "your_gipher_project_link",
       github: "your_gipher_github_link",
-      thumbnail: gipher,
+      thumbnail: gipherImg,
     },
     {
       id: 4,
