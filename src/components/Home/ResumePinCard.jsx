@@ -76,7 +76,7 @@ export function AnimatedPinDemo() {
           {/* ✅ Responsive Image Section */}
           <div className="flex flex-1 w-full rounded-xl mt-4 overflow-hidden">
             <img
-              src="src/assets/Profile.JPG" // ✅ Replace with your actual image path
+              src="src/assets/profile.JPG" // ✅ Replace with your actual image path
               alt="Profile Background"
               className="w-full h-full object-cover rounded-xl max-h-52 sm:max-h-64 md:max-h-80"
             />

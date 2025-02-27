@@ -24,7 +24,7 @@ import {
       ],
       link: "your_tour_management_project_link",
       github: "your_tour_management_github_link",
-      thumbnail: "src/assets/TourManagement.jpeg",
+      thumbnail: "src/assets/tourmanagement.jpeg",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ import {
       ],
       link: "your_api_project_link",
       github: "your_api_github_link",
-      thumbnail: "src/assets/POC.jpeg",
+      thumbnail: "src/assets/poc.jpeg",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ import {
       ],
       link: "your_gipher_project_link",
       github: "your_gipher_github_link",
-      thumbnail: "src/assets/Gipher.jpeg",
+      thumbnail: "src/assets/gipher.jpeg",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ import {
       ],
       link: "your_duclear_project_link",
       github: "your_duclear_github_link",
-      thumbnail: "src/assets/TimeTracker.png",
+      thumbnail: "src/assets/timetracker.png",
     }
   ];
   
