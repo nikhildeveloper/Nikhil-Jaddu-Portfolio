@@ -28,7 +28,7 @@ import {
         "Additionally, real-time monitoring with Prometheus and Grafana provides deep insights into system performance, ensuring proactive issue resolution and smooth operations."
       ],
       link: "your_tour_management_project_link",
-      github: "your_tour_management_github_link",
+      github: "https://github.com/DharshiniHariKrishnan/Tour_Management_System_Frontend",
       thumbnail: tourmanagementprojectimg,
     },
     {
@@ -39,7 +39,7 @@ import {
         "Optimized performance and reduced operational overhead."
       ],
       link: "your_api_project_link",
-      github: "your_api_github_link",
+      github: "https://github.com/Jaya-Sandeep-Ketha/Collaboration_App_UI",
       thumbnail: pocprojectimg,
     },
     {
@@ -50,7 +50,7 @@ import {
         "Backend powered by Spring Boot (Java), MySQL, and MongoDB for efficient data storage."
       ],
       link: "your_gipher_project_link",
-      github: "your_gipher_github_link",
+      github: "https://github.com/nikhildeveloper/Gipher",
       thumbnail: gipherprojectimg,
     },
     {
@@ -61,7 +61,7 @@ import {
         "Provides intuitive scheduling, productivity analytics, and seamless tracking features."
       ],
       link: "your_duclear_project_link",
-      github: "your_duclear_github_link",
+      github: "https://github.com/nikhildeveloper/ClockIt-frontend",
       thumbnail: timetrackerprojectimg,
     }
   ];

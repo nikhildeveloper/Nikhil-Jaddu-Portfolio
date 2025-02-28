@@ -161,7 +161,7 @@ const Hero = () => {
         {/* ✅ Social Links - Responsive Layout */}
         <div className="flex flex-wrap gap-4 mt-6">
           <a
-            href="https://github.com"
+            href="https://github.com/nikhildeveloper"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-gray-600 bg-black hover:bg-gray-800 transition duration-300 text-sm md:text-base"
@@ -171,7 +171,7 @@ const Hero = () => {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nikhil-sai-jaddu/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-gray-600 bg-black hover:bg-gray-800 transition duration-300 text-sm md:text-base"
@@ -181,7 +181,7 @@ const Hero = () => {
           </a>
 
           <a
-            href="mailto:example@email.com"
+            href="mailto:nikhilsaijaddurge@gmail.com"
             className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-gray-600 bg-black hover:bg-gray-800 transition duration-300 text-sm md:text-base"
           >
             <FaEnvelope className="w-5 h-5" />
