@@ -310,7 +310,7 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="relative w-full bg-black pt-16">
+      <div className="relative w-full bg-black pt-16 md:pt-0">
         <StarsBackground />
         <ShootingStars />
         <div className="flex justify-center items-center">

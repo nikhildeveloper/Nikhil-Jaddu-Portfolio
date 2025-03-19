@@ -20,7 +20,7 @@ import {
         <FaDocker className= "text-blue-600 text-2xl"/>
      ],
       description: [
-        "The Tour Management System is a cloud-native, secure, and high-performance travel booking platform built using React.js, Node.js, Express.js, and MongoDB, with Docker and Kubernetes for seamless deployment. ",
+        "The Tour Management System is a cloud-native, secure, and high-performance travel booking platform built using React.js, Node.js, Express.js, and MongoDB, with Docker and Kubernetes for seamless deployment.",
         "It ensures scalability and high availability through containerized microservices and Kubernetes auto-scaling.",
         "Robust security is implemented with JWT authentication, bcrypt encryption, and role-based access control (RBAC) to protect user data.", 
         "The system delivers a fast and seamless user experience, leveraging Redis caching, optimized MongoDB queries, and an interactive React.js frontend.",
