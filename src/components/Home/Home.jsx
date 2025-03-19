@@ -31,8 +31,11 @@ import Music from "../../assets/music.jpg"
 import Event from "../../assets/event.jpg"
 import Point from "../../assets/point.jpg"
 import Blind from "../../assets/blind.jpg"
-import Food from "../../assets/food.avif"
-import IOT from "../../assets/IOT.jpg"
+
+import gipherprojectimg from '../../assets/gipherprojectimg.jpeg'
+import tourmanagementprojectimg from '../../assets/tourmanagementprojectimg.jpeg'
+import timetrackerprojectimg from '../../assets/expenseTracker.jpg'
+import pocprojectimg from '../../assets/pocprojectimg.jpeg'
 
 function Home() {
   const timelineData = [
@@ -118,16 +121,16 @@ function Home() {
   ]
   const data1 = [
     {
-      category: "Web Development",
+      category: "MERN Application",
       title: "Tour Management System",
-      src: Event,
+      src: tourmanagementprojectimg,
       content:(
         <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold 
     text-black bg-white">
     <div className="flex justify-between items-start mb-4">
       <div>
         <div className="mt-2">
-          <span className="text-xl text-black/90">Innovative Event Booking System</span>
+          <span className="text-xl text-black/90"> Interactive Travel Booking Platform </span>
           <br />
           <span className="text-sm text-black/70">Project Overview</span>
         </div>
@@ -136,13 +139,22 @@ function Home() {
 
     <ul className="list-disc pl-6 text-black/80 mt-4">
       <li className="text-sm md:text-base leading-relaxed">
-        Designed and established an innovative venue booking system, EventMate, which streamlined the booking process, resulting in a 40% reduction in time spent on venue selection for event managers.
+      The Tour Management System is a cloud-native, secure, and high-performance travel booking platform built using React.js, Node.js, Express.js, and MongoDB, with Docker and Kubernetes for seamless deployment.
       </li>
       <li className="text-sm md:text-base leading-relaxed">
-        Architected a microservices-based framework for EventMate, improving modularity and scalability, which boosted deployment speed by 30%, enabling faster feature releases and minimizing downtime.
+      It ensures scalability and high availability through containerized microservices and Kubernetes auto-scaling.
       </li>
       <li className="text-sm md:text-base leading-relaxed">
-        Enhanced scalability and reliability by utilizing Docker for containerization and deploying services on platforms like Render and Azure, effectively accommodating increasing user demands.
+      Robust security is implemented with JWT authentication, bcrypt encryption, and role-based access control (RBAC) to protect user data.
+      </li>
+      <li className="text-sm md:text-base leading-relaxed">
+      The system delivers a fast and seamless user experience, leveraging Redis caching, optimized MongoDB queries, and an interactive React.js frontend.
+      </li>
+      <li className="text-sm md:text-base leading-relaxed">
+      Automated CI/CD pipelines (GitHub Actions/Jenkins) streamline deployments, reducing manual effort and improving development efficiency.
+      </li>
+      <li className="text-sm md:text-base leading-relaxed">
+      Additionally, real-time monitoring with Prometheus and Grafana provides deep insights into system performance, ensuring proactive issue resolution and smooth operations.
       </li>
     </ul>
 
@@ -158,16 +170,16 @@ function Home() {
       )
     },
     {
-      category: "Machine Learning",
-      title: "Emotion Based Music Recommendation System",
-      src: Music,
+      category: "Angular application with Spring Boot",
+      title: "Gipher Go",
+      src: gipherprojectimg,
       content:(
         <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold 
     text-black bg-white">
     <div className="flex justify-between items-start mb-4">
       <div>
         <div className="mt-2">
-          <span className="text-xl text-black/90">Emotion-Driven Music Recommendation System Using Language Analysis</span>
+          <span className="text-xl text-black/90">Place to find interesting GIFs</span>
           <br />
           <span className="text-sm text-black/70">Project Overview</span>
         </div>
@@ -176,13 +188,16 @@ function Home() {
 
     <ul className="list-disc pl-6 text-black/80 mt-4">
       <li className="text-sm md:text-base leading-relaxed">
-        Implemented a real-time facial expression recognition system using Convolutional Neural Networks (CNN) with Keras and OpenCV, achieving 95% accuracy in detecting emotions such as happiness, sadness, anger, and neutrality.
+      Designed a dynamic GIF-fetching website with AngularJS and TypeScript, creating an interactive UI using HTML, CSS, and Bootstrap 5. Enabled seamless GIF display with responsive layouts, ensuring a visually engaging user experience across devices. 
       </li>
       <li className="text-sm md:text-base leading-relaxed">
-        Integrated the system with the Spotify API, leveraging playlist recommendations based on detected emotions, enabling personalized music experiences tailored to users’ moods.
+      Developed a robust backend with Spring Boot and Java, integrating MySQL for structured metadata and MongoDB for flexible GIF storage. Implemented efficient data retrieval pipelines, supporting quick access to a diverse GIF library for users. 
       </li>
       <li className="text-sm md:text-base leading-relaxed">
-        Built an interactive Flask-based web application featuring live webcam feeds for emotion detection, multilingual support for global accessibility, and inspirational quotes linked to emotional states, enhancing user interaction and retention by 25%.
+      Architected microservices with Spring Boot, decoupling search, fetch, and display functionalities for scalability. Streamlined inter-service communication using RESTful APIs, enhancing modularity and system resilience. 
+      </li>
+      <li className="text-sm md:text-base leading-relaxed">
+      Optimized platform performance by leveraging MongoDB’s NoSQL flexibility for high-volume GIF data. Ensured low-latency responses with MySQL indexing, delivering a smooth and reliable GIF browsing experience. 
       </li>
     </ul>
 
@@ -199,7 +214,7 @@ function Home() {
     },
     {
       category: "API",
-      title: "Touch : Point Of Contact API",
+      title: "Touch : API System for Contact Management",
       src: Point,
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-black bg-white">
@@ -215,19 +230,19 @@ function Home() {
       
           <ul className="list-disc pl-6 text-black/80 mt-4">
             <li className="text-sm md:text-base leading-relaxed">
-              Centralized data management and streamlined onboarding for companies, with robust APIs for admin features and integrations.
+            Developed a centralized platform with React.js, enabling streamlined onboarding and data management for companies. Built robust APIs using Express.js and Node.js, integrating PostgreSQL to support admin features and seamless third-party integrations.
             </li>
             <li className="text-sm md:text-base leading-relaxed">
-              Advanced search capabilities integrated with project names, GitHub repositories, and feature-specific searches for seamless collaboration.
+            Integrated advanced search functionality with Node.js, indexing project names, GitHub repositories, and feature-specific data. Enabled seamless collaboration by connecting teams, fostering transparency and efficient knowledge sharing across projects. 
             </li>
             <li className="text-sm md:text-base leading-relaxed">
-              Enhanced collaboration by connecting employees across teams and projects, promoting transparency and knowledge sharing.
+            Implemented secure access controls with token-based authentication and role-based permissions in Express.js. Protected sensitive data while ensuring secure integrations, enhancing trust in cross-team interactions.  
             </li>
             <li className="text-sm md:text-base leading-relaxed">
-              Secure access with role-based control and token-based authentication to protect sensitive data and ensure secure integrations.
+            Developed a scalable API framework in Node.js, deployed on Amazon ECS and Fargate with PostgreSQL. Optimized performance and reduced operational overhead, ensuring a responsive user experience. 
             </li>
           </ul>
-      
+
           {/* Icons representing features */}
           <div className="flex justify-center space-x-6 mt-8">
             <FaUsers className="text-4xl text-blue-600" />
@@ -241,15 +256,15 @@ function Home() {
     },
   
     {
-      category: "Machine Learning",
-      title: "Text Convert Language Translation Application",
-      src: Blind,
+      category: "AI",
+      title: "Duclear",
+      src: timetrackerprojectimg,
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-black bg-white">
           <div className="flex justify-between items-start mb-4">
             <div>
               <div className="mt-2">
-                <span className="text-xl text-black/90">Voice-Activated Language Translation System for Visually Challenged or Illiterate Individuals</span>
+                <span className="text-xl text-black/90">Smart Expense Tracker with AI-powered Receipt Analysis</span>
                 <br />
                 <span className="text-sm text-black/70">Project Overview</span>
               </div>
@@ -258,16 +273,19 @@ function Home() {
       
           <ul className="list-disc pl-6 text-black/80 mt-4">
             <li className="text-sm md:text-base leading-relaxed">
-              Speech recognition to enable voice interaction for source and target language selection.
+            Developed a MERN stack web application that enables users to track expenses by uploading supermarket bills, integrating OpenAI’s ChatGPT API for automated bill detail extraction and categorization.
             </li>
             <li className="text-sm md:text-base leading-relaxed">
-              Real-time translation between languages using the `translate` library.
+            Implemented OCR (Tesseract.js / Google Vision API) to process text from uploaded images/PDFs and built a secure user authentication system (JWT, bcrypt.js) with role-based access control.
             </li>
             <li className="text-sm md:text-base leading-relaxed">
-              Text-to-speech (TTS) functionality to read out translations and provide feedback to the user.
+            Designed an interactive dashboard using React.js, Redux Toolkit/Zustand, Chart.js, featuring real-time expense monitoring, automated monthly reports (CSV/PDF downloads), and insightful analytics.
             </li>
             <li className="text-sm md:text-base leading-relaxed">
-              Option to save the translation to a file and send it via email with attachment.
+            Utilized Multer for file uploads, Cloudinary/Firebase Storage for bill storage, and MongoDB Atlas for scalable data management, ensuring efficient data handling and retrieval.
+            </li>
+            <li className="text-sm md:text-base leading-relaxed">
+            Deployed the frontend on Vercel/Netlify and the backend on Render/Railway/AWS EC2 with CI/CD automation via GitHub Actions, ensuring a responsive UI with Tailwind CSS/Material-UI and a future scope for ML-based financial insights and voice command integration.
             </li>
           </ul>
       
@@ -282,90 +300,8 @@ function Home() {
       )
       
     },
-    {
-      category: "Web Development",
-      title: "GoFood- Food Delivery App",
-      src: Food,
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-black bg-white">
-          <div className="flex justify-between items-start mb-4">
-            <div>
-              <div className="mt-2">
-                <span className="text-xl text-black/90">GoFood - Food Delivery App</span>
-                <br />
-                <span className="text-sm text-black/70">Project Overview</span>
-              </div>
-            </div>
-          </div>
-      
-          <ul className="list-disc pl-6 text-black/80 mt-4">
-            <li className="text-sm md:text-base leading-relaxed">
-              A fully functional food delivery app built with the MERN stack, enabling users to order food from a variety of local restaurants and have it delivered directly to their doorstep. The app provides seamless user experience with a clean interface for browsing restaurants and menus.
-            </li>
-            <li className="text-sm md:text-base leading-relaxed">
-              Real-time order tracking that allows users to monitor their food's journey from restaurant to delivery, ensuring transparency and user satisfaction. Notifications keep users updated on the status of their order, such as when it’s being prepared, on its way, or delivered.
-            </li>
-            <li className="text-sm md:text-base leading-relaxed">
-              Secure and easy-to-use payment gateway integration that supports multiple payment options like credit cards, debit cards, and online wallets, ensuring users can pay effortlessly for their orders while keeping their financial data safe.
-            </li>
-            <li className="text-sm md:text-base leading-relaxed">
-              A comprehensive admin panel designed for restaurant owners and app administrators to manage and monitor orders, customers, restaurant listings, and menus. The panel also allows administrators to track and resolve customer issues, add new restaurants, and update restaurant information as needed.
-            </li>
-          </ul>
-      
-          {/* Icons representing features */}
-          <div className="flex justify-center space-x-6 mt-8">
-            <FaPizzaSlice className="text-4xl text-red-600" />
-            <FaShoppingCart className="text-4xl text-green-600" />
-            <FaMoneyBillWave className="text-4xl text-yellow-600" />
-            <FaUserShield className="text-4xl text-blue-600" />
-          </div>
-        </div>
-      )
-      
-    },
-    {
-      category: "IoT",
-      title: "Automatic Surface Disinfecting Robot Using UV Light",
-      src: IOT,
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-black bg-white">
-          <div className="flex justify-between items-start mb-4">
-            <div>
-              <div className="mt-2">
-                <span className="text-xl text-black/90">Automatic Surface Disinfecting Robot</span>
-                <br />
-                <span className="text-sm text-black/70">Project Overview</span>
-              </div>
-            </div>
-          </div>
-      
-          <ul className="list-disc pl-6 text-black/80 mt-4">
-            <li className="text-sm md:text-base leading-relaxed">
-              Developed an IoT-based automatic surface disinfecting robot utilizing an HC-SR04 distance sensor to measure distances and control movement, ensuring effective coverage and cleaning.
-            </li>
-            <li className="text-sm md:text-base leading-relaxed">
-              The robot autonomously navigates the room, detecting and avoiding obstacles to reach every corner, ensuring complete disinfection of surfaces, much like a robotic vacuum.
-            </li>
-            <li className="text-sm md:text-base leading-relaxed">
-              Equipped with UV light technology to disinfect surfaces safely, reducing the need for manual cleaning and improving hygiene in the environment.
-            </li>
-            <li className="text-sm md:text-base leading-relaxed">
-              Real-time data processing and control of robot movements are managed through IoT systems, allowing users to track and monitor the cleaning process remotely for better convenience.
-            </li>
-          </ul>
-      
-          {/* Icons representing features */}
-          <div className="flex justify-center space-x-6 mt-8">
-            <FaRobot className="text-4xl text-gray-600" />
-            <FaBluetooth className="text-4xl text-blue-600" />
-            <FaLightbulb className="text-4xl text-yellow-600" />
-            <FaWifi className="text-4xl text-green-600" />
-          </div>
-        </div>
-      )
-      
-    },
+
+ 
   ];
   const cards1 = data1.map((card, index) => (
     <Card key={card.src} card={card} index={index} />

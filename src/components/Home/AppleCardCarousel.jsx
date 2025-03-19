@@ -111,20 +111,21 @@ export const Carousel = ({
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-10">
-          <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-            onClick={scrollLeft}
-            disabled={!canScrollLeft}>
-            <FaArrowLeft className="h-6 w-6 text-gray-500" />
-          </button>
-          <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-            onClick={scrollRight}
-            disabled={!canScrollRight}>
-            <FaArrowRight className="h-6 w-6 text-gray-500" />
-          </button>
-        </div>
+        <div className="flex justify-end gap-2 mr-5 sm:mr-10 md:mr-20 mt-3 sm:mt-5">
+  <button
+    className="relative z-40 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+    onClick={scrollLeft}
+    disabled={!canScrollLeft}>
+    <FaArrowLeft className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-gray-500" />
+  </button>
+  <button
+    className="relative z-40 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+    onClick={scrollRight}
+    disabled={!canScrollRight}>
+    <FaArrowRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-gray-500" />
+  </button>
+</div>
+
       </div>
     </CarouselContext.Provider>)
   );
