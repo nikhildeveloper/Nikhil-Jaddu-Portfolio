@@ -27,15 +27,15 @@ import { FaReact,FaJava, FaDatabase, FaPython, FaLinux,FaNodeJs,FaGithub, FaDock
   FaJira, FaProjectDiagram, FaGitAlt, FaMicrosoft, FaFlask } from 'react-icons/fa'; // Import the necessary icons
 import { SiPython,SiJavascript,SiMongodb, SiExpress, SiJira, SiRedux,SiAngular,SiGit,SiBitbucket,SiFlask,SiOpencv,SiKeras, SiTypescript, SiPostgresql, SiFirebase,  
   SiPostman, SiIntellijidea, SiJupyter, SiTailwindcss} from 'react-icons/si';
-import Music from "../../assets/music.jpg"
-import Event from "../../assets/event.jpg"
+
 import Point from "../../assets/point.jpg"
-import Blind from "../../assets/blind.jpg"
+
 
 import gipherprojectimg from '../../assets/gipherprojectimg.jpeg'
 import tourmanagementprojectimg from '../../assets/tourmanagementprojectimg.jpeg'
 import timetrackerprojectimg from '../../assets/expenseTracker.jpg'
 import pocprojectimg from '../../assets/pocprojectimg.jpeg'
+import Header from '../Header/Header.jsx';
 
 function Home() {
   const timelineData = [
@@ -197,7 +197,7 @@ function Home() {
       Architected microservices with Spring Boot, decoupling search, fetch, and display functionalities for scalability. Streamlined inter-service communication using RESTful APIs, enhancing modularity and system resilience. 
       </li>
       <li className="text-sm md:text-base leading-relaxed">
-      Optimized platform performance by leveraging MongoDB’s NoSQL flexibility for high-volume GIF data. Ensured low-latency responses with MySQL indexing, delivering a smooth and reliable GIF browsing experience. 
+      Optimized platform performance by leveraging MongoDB's NoSQL flexibility for high-volume GIF data. Ensured low-latency responses with MySQL indexing, delivering a smooth and reliable GIF browsing experience. 
       </li>
     </ul>
 
@@ -273,7 +273,7 @@ function Home() {
       
           <ul className="list-disc pl-6 text-black/80 mt-4">
             <li className="text-sm md:text-base leading-relaxed">
-            Developed a MERN stack web application that enables users to track expenses by uploading supermarket bills, integrating OpenAI’s ChatGPT API for automated bill detail extraction and categorization.
+            Developed a MERN stack web application that enables users to track expenses by uploading supermarket bills, integrating OpenAI's ChatGPT API for automated bill detail extraction and categorization.
             </li>
             <li className="text-sm md:text-base leading-relaxed">
             Implemented OCR (Tesseract.js / Google Vision API) to process text from uploaded images/PDFs and built a secure user authentication system (JWT, bcrypt.js) with role-based access control.
@@ -308,335 +308,80 @@ function Home() {
   ));
    
   return (
-    // backup
-    // <>
-    //   <div className="relative w-full h-[2rem] bg-black">
-        
-
-
-    //   </div>
-    //   <div className='flex justify-center items-center bg-black'>
-    //     <Hero/>
-    //     {/* <SparklesPreview /> */}
-    //   </div>
-    //   <SparklesPreview />
-    //   <StarsBackground />
-    //   <div className="flex flex-col md:flex-row items-center justify-center w-full bg-black px-6 sm:px-12 py-10">
-    //     {/* ✅ About Me - Appears FIRST on mobile */}
-    //     <div className="w-full md:w-1/2 mb-10 md:mb-0">
-    //       <AboutMe />
-    //     </div>
-
-    //     {/* ✅ Card Section - Appears BELOW on mobile */}
-    //     <div className="w-full md:w-1/2 flex justify-center">
-    //       <AnimatedPinDemo />
-    //     </div>
-
-    //     {/* ✅ Background Effect (Correctly Positioned) */}
-    //     <div className="absolute inset-0 -z-10">
-    //       <StarsBackground />
-    //     </div>
-    //   </div>
-
-          
-            
-    //   {/* Timeline Section */}
-    //   <div className="relative z-10 ">
-    //   <Timeline data={timelineData} />
-    //   </div>
-
-    //   {/* Scrolling Container with Shooting Stars */}
-    //    <div className="relative w-full overflow-hidden">
-    //      {/* Shooting Stars & Background inside the Container */}
-    //      <ShootingStars />
-        
-
-    //      {/* ContainerScroll Component */}
-    //      <ContainerScroll titleComponent={"Projects"}>
-    //        <LayoutGrid />
-    //      </ContainerScroll>
-       
-
-    //  </div>
-    //  <InfiniteSkills/>
-    //   <div>
-    //   <h2 className="absolute z-10 text-3xl md:text-5xl ml-30 font-bold text-white mt-20">
-
-    //     Education
-    //     </h2>
-    //     <div className="h-[60rem] bg-black flex flex-col items-center justify-center relative w-full">
-
-    //     <ShootingStars />
-    //     <StarsBackground />
-        
-    //     <ThreeDCardDemo/>
-          
-    //     </div>
-    //   </div>
-
-
-    //    <div className="relative w-full bg-black overflow-hidden">
-       
-      
-    //  <div className="relative w-full h-auto flex flex-col items-center justify-center">
-
-
-     
-    //     <div className="relative w-full h-[30rem] flex items-center justify-center">
-    //     <div className="absolute inset-0 flex justify-center items-center">
-    //    <StarsBackground />
-    //    </div>
-    //          <BackgroundLines svgOptions={{ duration: 15 }} />
-
-    //          <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
-
-    //            Achievements
-    //          </h2>
-    //        </div>
-    //        <ShootingStars />
-    //        {/* <StarsBackground /> */}
-          
-    //        <div className='pb-50 pr-80'>
-    //        <StickyScroll content={achievementsData} />
-    //        {/* <ShootingStars /> */}
-    //        </div>
-           
-    //      </div>
-    //    </div> 
-       
-
-       
-      
-    // </>
     <>
-    {/* ✅ Global Background (Prevents Line Issue) */}
-    <div className="relative w-full bg-black">
-      <StarsBackground />
-      <ShootingStars />
-      {/* ✅ Hero Section */}
-      <div className="flex justify-center items-center ">
-        <Hero />
-      </div>
-      {/* ✅ Wrap in a div with proper alignment */}
-      {/* <div className="w-full flex justify-start pl-4 sm:pl-1 md:pl-12 ">
-        <SparklesPreview />
-      </div> */}
-{/* ✅ Wrapping Sparkles in a flex container to ensure alignment */}
-{/* ✅ Keep `max-w-8xl`, but limit internal width */}
-<div className="w-full flex justify-center md:justify-start max-w-8xl mx-auto px-6 sm:px-12">
-  <div className="w-full max-w-7xl flex items-center justify-center md:justify-start">
-    <SparklesPreview />
-  </div>
-</div>
-
-
-
-
-
-      {/* ✅ About Me Section */}
-
-    <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-8xl mx-auto px-6 sm:px-12 py-10 gap-y-10 md:gap-x-16">
-      <div className="w-full md:w-1/2 max-w-3xl flex justify-center md:justify-start">
-        <AboutMe />
-      </div>
-      <div className="w-full md:w-1/2 max-w-3xl flex justify-center md:justify-end">
-        <AnimatedPinDemo />
-      </div>
-    </div>
-
-
-
-      {/* ✅ Timeline Section */}
-      <div className="relative z-10">
-        <Timeline data={timelineData} />
-        
-      </div>
-
-      {/* ✅ Projects Section */}
-      {/* <div className="relative w-full overflow-hidden">
+      <Header />
+      <div className="relative w-full bg-black pt-16">
+        <StarsBackground />
         <ShootingStars />
-        <ContainerScroll titleComponent={"Projects"}>
-          <LayoutGrid />
-        </ContainerScroll>
-      </div> */}
-
-          <div className="w-full h-full bg-black">
-            <h2
-              className="max-w-7xl pt-40 pl-4 mx-auto text-xl md:text-5xl font-bold text-white dark:text-neutral-200 font-sans">
-              Projects
-            </h2>
-            <Carousel items={cards1} />
-          </div>
-
-
-            {/* ✅ Projects Section */}
-      <div className="relative w-full overflow-hidden">
-        <ShootingStars />
-        <ContainerScroll titleComponent={"Projects"}>
-        <CardGrid/>
-        </ContainerScroll>
-      </div>
-
-      {/* ✅ Infinite Skills Section */}
-      <InfiniteSkills />
-
-      {/* ✅ Education Section */}
-      <div className="relative w-full flex flex-col items-start justify-center py-10 px-6 sm:px-12">
-        {/* ✅ Education Heading - Aligned Left */}
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 mt-40 self-center text-center">
-          Education
-        </h2>
-
-        {/* ✅ Keeps ThreeDCardDemo Centered */}
-        <div className="w-full flex justify-center">
-          <ThreeDCardDemo />
+        <div className="flex justify-center items-center">
+          <Hero />
         </div>
-      </div>
+        <div className="w-full flex justify-center md:justify-start max-w-8xl mx-auto px-6 sm:px-12">
+          <div className="w-full max-w-7xl flex items-center justify-center md:justify-start">
+            <SparklesPreview />
+          </div>
+        </div>
 
+        <div id="about" className="flex flex-col md:flex-row items-center justify-center w-full max-w-8xl mx-auto px-6 sm:px-12 py-10 gap-y-10 md:gap-x-16">
+          <div className="w-full md:w-1/2 max-w-3xl flex justify-center md:justify-start">
+            <AboutMe />
+          </div>
+          <div className="w-full md:w-1/2 max-w-3xl flex justify-center md:justify-end">
+            <AnimatedPinDemo />
+          </div>
+        </div>
 
-      {/* ✅ Acheivements */}
-      <div className="relative w-full bg-black overflow-hidden">
-        <div className="relative w-full h-auto flex flex-col items-center justify-center">     
+        <div id="experience" className="relative z-10">
+          <Timeline data={timelineData} />
+        </div>
+
+        <div id="projects" className="w-full h-full bg-black">
+          <h2 className="max-w-7xl pt-40 pl-4 mx-auto text-xl md:text-5xl font-bold text-white dark:text-neutral-200 font-sans">
+            Projects
+          </h2>
+          <Carousel items={cards1} />
+        </div>
+
+        <div className="relative w-full overflow-hidden">
+          <ShootingStars />
+          <ContainerScroll titleComponent={"Projects"}>
+            <CardGrid/>
+          </ContainerScroll>
+        </div>
+
+        <div id="skills" className="relative w-full">
+          <InfiniteSkills />
+        </div>
+
+        <div className="relative w-full flex flex-col items-start justify-center py-10 px-6 sm:px-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 mt-40 self-center text-center">
+            Education
+          </h2>
+          <div className="w-full flex justify-center">
+            <ThreeDCardDemo />
+          </div>
+        </div>
+
+        <div className="relative w-full bg-black overflow-hidden">
+          <div className="relative w-full h-auto flex flex-col items-center justify-center">     
             <div className="relative w-full h-[10rem] flex items-center justify-center">
               <div className="absolute inset-0 flex justify-center items-center">
-              <StarsBackground />
+                <StarsBackground />
               </div>
               <BackgroundLines svgOptions={{ duration: 15 }} />
-              <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white ">
+              <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
                 Achievements
               </h2>
             </div>
             <ShootingStars />
-            {/* <StarsBackground /> */}
             <div className="flex justify-center items-center w-full">
-
               <StickyScroll content={achievementsData} />
             </div>
-
-
           </div>
-        </div> 
+        </div>
       </div>
-
-      
-
-      {/* <div className='bg-black'>
-      <div className="absolute inset-0 flex justify-center items-center">
-          <StarsBackground />
-      </div>
-     
-      <CardGrid/>
-      
-      </div> */}
-
-
-
-  </>
-  
-
-
+    </>
   );
 }
 
 export default Home;
-
-
-    // <>
-    //   <div className="relative w-full h-[2rem] bg-black">
-        
-
-
-    //   </div>
-    //   <div className='flex justify-center items-center bg-black'>
-    //     <Hero/>
-    //     {/* <SparklesPreview /> */}
-    //   </div>
-    //   <SparklesPreview />
-    //   <StarsBackground />
-    //   <div className="flex flex-col md:flex-row items-center justify-center w-full bg-black px-6 sm:px-12 py-10">
-    //     {/* ✅ About Me - Appears FIRST on mobile */}
-    //     <div className="w-full md:w-1/2 mb-10 md:mb-0">
-    //       <AboutMe />
-    //     </div>
-
-    //     {/* ✅ Card Section - Appears BELOW on mobile */}
-    //     <div className="w-full md:w-1/2 flex justify-center">
-    //       <AnimatedPinDemo />
-    //     </div>
-
-    //     {/* ✅ Background Effect (Correctly Positioned) */}
-    //     <div className="absolute inset-0 -z-10">
-    //       <StarsBackground />
-    //     </div>
-    //   </div>
-
-          
-            
-    //   {/* Timeline Section */}
-    //   <div className="relative z-10 ">
-    //   <Timeline data={timelineData} />
-    //   </div>
-
-    //   {/* Scrolling Container with Shooting Stars */}
-    //    <div className="relative w-full overflow-hidden">
-    //      {/* Shooting Stars & Background inside the Container */}
-    //      <ShootingStars />
-        
-
-    //      {/* ContainerScroll Component */}
-    //      <ContainerScroll titleComponent={"Projects"}>
-    //        <LayoutGrid />
-    //      </ContainerScroll>
-       
-
-    //  </div>
-    //  <InfiniteSkills/>
-    //   <div>
-    //   <h2 className="absolute z-10 text-3xl md:text-5xl ml-30 font-bold text-white mt-20">
-
-    //     Education
-    //     </h2>
-    //     <div className="h-[60rem] bg-black flex flex-col items-center justify-center relative w-full">
-
-    //     <ShootingStars />
-    //     <StarsBackground />
-        
-    //     <ThreeDCardDemo/>
-          
-    //     </div>
-    //   </div>
-
-
-    //    <div className="relative w-full bg-black overflow-hidden">
-       
-      
-    //  <div className="relative w-full h-auto flex flex-col items-center justify-center">
-
-
-     
-    //     <div className="relative w-full h-[30rem] flex items-center justify-center">
-    //     <div className="absolute inset-0 flex justify-center items-center">
-    //    <StarsBackground />
-    //    </div>
-    //          <BackgroundLines svgOptions={{ duration: 15 }} />
-
-    //          <h2 className="absolute z-10 text-3xl md:text-5xl font-bold text-white">
-
-    //            Achievements
-    //          </h2>
-    //        </div>
-    //        <ShootingStars />
-    //        {/* <StarsBackground /> */}
-          
-    //        <div className='pb-50 pr-80'>
-    //        <StickyScroll content={achievementsData} />
-    //        {/* <ShootingStars /> */}
-    //        </div>
-           
-    //      </div>
-    //    </div> 
-       
-
-       
-      
-    // </>
