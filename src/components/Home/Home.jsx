@@ -34,11 +34,10 @@ function Home() {
         duration: "Aug 2024 - Present",
         highlights: [
         
-      "Developed and maintained scalable, responsive web applications using React.js, JavaScript and TailwindCSS, ensuring cross-browser and cross-device compatibility while enhancing performance and user experience. ",
-      "Optimized ad block loading strategies by implementing asynchronous API calls, React hooks rendering pipeline enhancements, lazy loading, and caching mechanisms, leading to a 60% increase in user retention on high-traffic pages.",
-      "Designed and integrated RESTful API endpoints with PostgreSQL, MongoDB, Express.js, and Redis, enabling real-time data updates, efficient retrieval, and seamless backend integration, improving database query efficiency by 40%.",
-      "Led the development of the IDS Legislation Tracker, leveraging React.js, Next.js, Node.js, Firebase Firestore, and Redux for state management, ensuring scalable buildouts and responsive UI design, reducing page load times by 35%.",
-      "Collaborated with designers and editors to ensure UX consistency and accessibility compliance across all platforms."
+          "Built the IDS Legislation Tracker UI with React.js and Redux, designing for complex data needs. Integrated dynamic state management and JWT authentication, enabling efficient handling of real-time legislative updates.",
+          "Crafted RESTful APIs using Express.js and Node.js, integrating MongoDB for data flow. Tested with Postman, ensuring reliable support for dynamic content updates across the platform.",
+          "Implemented dynamic ad rendering by integrating Google Ad Manager (GAM) and Google Tag Manager (GTM), leveraging DOM manipulation and script injection to optimize ad placement and tracking.",
+          "Streamlined page load performance with React.js hooks and lazy loading for list items on high-traffic days. Added Redis caching for frequent queries, ensuring a seamless and responsive user experience."
         ]
       }
     },
@@ -60,16 +59,30 @@ function Home() {
       content: {
         role: "Software Engineer",
         description: "Handled backend development using Java",
-        duration: "Jan 2022 - Aug 2023",
+        duration: "Jul 2022 - Aug 2023",
         highlights: [
-          "Collaborated with FedEx as a dedicated Full Stack Developer, actively contributing to the development and maintenance of the Transportation Management System (TMS), which efficiently processes over 10,000 shipments per month.",
-          "Boosted data retrieval efficiency by 30% by implementing Oracle PL/SQL stored procedures, indexing strategies, and partitioning techniques, leading to faster transactional queries and optimized database performance.",
-          "Developed and integrated RESTful APIs with FedEx’s logistics infrastructure, enabling seamless data exchange and real-time shipment tracking, improving delivery accuracy by 25%.",
-          "Implemented microservices architecture using Spring Boot, Kafka, and Docker, ensuring scalability, fault tolerance, and efficient asynchronous communication, which enhanced system resilience and reduced processing latency by 35%.",
-          "Implemented modern software development best practices including CI/CD pipelines (GitHub Actions, Jenkins) and containerization (Docker, Kubernetes), improving deployment efficiency and system reliability by 50%."
+          "Designed 15+ user screens for order creation and invoice generation, powered by RESTful APIs built with Spring Boot and Spring MVC, integrated with Redis for caching, Swagger for documentation, and Postman for testing, improving system efficiency by 20%.",
+          "Optimized database performance for 10,000+ monthly shipments using Oracle PL/SQL stored procedures, indexing, and partitioning, reducing query execution time by 30% and enhancing system scalability.",
+          "Developed a real-time Shipment Tracking Microservice using Spring Boot, Kafka, and Docker, orchestrated with Kubernetes and configured with Spring Cloud Config, enabling live updates for 10,000+ shipments and ensuring fault tolerance.",
+          "Fortified APIs with OAuth2 authentication via Spring Security, reducing unauthorized access by 30% and ensuring compliance with secure shipment processing workflows.",
+          "Enabled real-time shipment tracking with 25% higher accuracy by implementing event-driven architecture with Kafka, improving data consistency and asynchronous communication."
         ]
       }
     },
+    {
+      title: "Wipro | Intern",
+      content: {
+        role: "Java FullStack developer",
+        description: "Worked on MEAN stack",
+        duration: "Jan 2022 - Aug 2022",
+        highlights: [
+          "Continuous learning and best coding practices were maintained through weekly hands-on assignments, timely project deliveries, and adherence to industry standards, ensuring code quality, maintainability, and on-time completion of 100% of project milestones.",
+          "Developed and maintained full-stack web applications using Angular, Java, and Spring Boot, ensuring scalability and performance.",
+          "Designed and implemented RESTful APIs and microservices with Spring Boot, improving modularity and data exchange efficiency."
+        ]
+      }
+    },
+    
 
   ];
   const achievementsData = [
@@ -201,7 +214,7 @@ function Home() {
       <StarsBackground />
       <ShootingStars />
       {/* ✅ Hero Section */}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center ">
         <Hero />
       </div>
       {/* ✅ Wrap in a div with proper alignment */}

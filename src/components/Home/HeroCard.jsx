@@ -127,7 +127,7 @@ const Hero = () => {
   return (
     <div 
       ref={containerRef} 
-      className="relative bg-black text-white w-full px-4 sm:px-8 lg:px-20 py-10 md:ml-10 lg:ml-10"
+      className="relative bg-black text-white w-full px-4 sm:px-8 lg:px-20 py-10 md:ml-10 lg:ml-10 lg:mt-30"
     >
       <div className="container mx-auto text-left">  
         {/* ✅ "Hey there! I'm-" now left-aligned & smaller */}
