@@ -126,18 +126,18 @@ function Home() {
       src: tourmanagementprojectimg,
       content:(
         <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold 
-    text-black bg-white">
+    text-white bg-black/80 backdrop-blur-lg ">
     <div className="flex justify-between items-start mb-4">
       <div>
         <div className="mt-2">
-          <span className="text-xl text-black/90"> Interactive Travel Booking Platform </span>
+          <span className="text-xl text-white/90"> Interactive Travel Booking Platform </span>
           <br />
-          <span className="text-sm text-black/70">Project Overview</span>
+          <span className="text-sm text-white/70">Project Overview</span>
         </div>
       </div>
     </div>
 
-    <ul className="list-disc pl-6 text-black/80 mt-4">
+    <ul className="list-disc pl-6 text-white/80 mt-4">
       <li className="text-sm md:text-base leading-relaxed">
       The Tour Management System is a cloud-native, secure, and high-performance travel booking platform built using React.js, Node.js, Express.js, and MongoDB, with Docker and Kubernetes for seamless deployment.
       </li>
@@ -175,18 +175,18 @@ function Home() {
       src: gipherprojectimg,
       content:(
         <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold 
-    text-black bg-white">
+    ttext-white bg-black/80 backdrop-blur-lg ">
     <div className="flex justify-between items-start mb-4">
       <div>
         <div className="mt-2">
-          <span className="text-xl text-black/90">Place to find interesting GIFs</span>
+          <span className="text-xl text-white/90">Place to find interesting GIFs</span>
           <br />
-          <span className="text-sm text-black/70">Project Overview</span>
+          <span className="text-sm text-white/70">Project Overview</span>
         </div>
       </div>
     </div>
 
-    <ul className="list-disc pl-6 text-black/80 mt-4">
+    <ul className="list-disc pl-6 text-white/80 mt-4">
       <li className="text-sm md:text-base leading-relaxed">
       Designed a dynamic GIF-fetching website with AngularJS and TypeScript, creating an interactive UI using HTML, CSS, and Bootstrap 5. Enabled seamless GIF display with responsive layouts, ensuring a visually engaging user experience across devices. 
       </li>
@@ -217,18 +217,18 @@ function Home() {
       title: "Touch : API System for Contact Management",
       src: Point,
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-black bg-white">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold ttext-white bg-black/80 backdrop-blur-lg ">
           <div className="flex justify-between items-start mb-4">
             <div>
               <div className="mt-2">
-                <span className="text-xl text-black/90">Revolutionizing Organizational Collaboration</span>
+                <span className="text-xl text-white/90">Revolutionizing Organizational Collaboration</span>
                 <br />
-                <span className="text-sm text-black/70">Project Overview</span>
+                <span className="text-sm text-white/70">Project Overview</span>
               </div>
             </div>
           </div>
       
-          <ul className="list-disc pl-6 text-black/80 mt-4">
+          <ul className="list-disc pl-6 text-white/80 mt-4">
             <li className="text-sm md:text-base leading-relaxed">
             Developed a centralized platform with React.js, enabling streamlined onboarding and data management for companies. Built robust APIs using Express.js and Node.js, integrating PostgreSQL to support admin features and seamless third-party integrations.
             </li>
@@ -260,18 +260,18 @@ function Home() {
       title: "Duclear",
       src: timetrackerprojectimg,
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-black bg-white">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold ttext-white bg-black/80 backdrop-blur-lg ">
           <div className="flex justify-between items-start mb-4">
             <div>
               <div className="mt-2">
-                <span className="text-xl text-black/90">Smart Expense Tracker with AI-powered Receipt Analysis</span>
+                <span className="text-xl text-white/90">Smart Expense Tracker with AI-powered Receipt Analysis</span>
                 <br />
-                <span className="text-sm text-black/70">Project Overview</span>
+                <span className="text-sm text-white/70">Project Overview</span>
               </div>
             </div>
           </div>
       
-          <ul className="list-disc pl-6 text-black/80 mt-4">
+          <ul className="list-disc pl-6 text-white/80 mt-4">
             <li className="text-sm md:text-base leading-relaxed">
             Developed a MERN stack web application that enables users to track expenses by uploading supermarket bills, integrating OpenAI's ChatGPT API for automated bill detail extraction and categorization.
             </li>

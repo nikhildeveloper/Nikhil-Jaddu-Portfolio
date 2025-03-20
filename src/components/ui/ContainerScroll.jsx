@@ -34,9 +34,15 @@ export const ContainerScroll = ({ titleComponent, children }) => {
     return isMobile ? [0.7, 0.9] : [1.05, 1];
   };
 
-  const rotate = useTransform(scrollYProgress, [0, 0.5], [20, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [-50, 0]);
+  const rotate = useTransform(scrollYProgress, [0, 0.5], [20, 0], {
+    clamp: true
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions(), {
+    clamp: true
+  });
+  const translate = useTransform(scrollYProgress, [0, 1], [-50, 0], {
+    clamp: true
+  });
 
   return (
     <div className="relative h-auto flex items-center justify-center p-2 md:p-10 overflow-hidden max-w-screen-lg mx-auto" 
@@ -62,12 +68,13 @@ export const Header = ({ translate, titleComponent }) => {
     <motion.div
       style={{ 
         translateY: translate,
-        transformOrigin: "center center"
+        transformOrigin: "center center",
+        willChange: "transform"
       }}
       className="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 text-center text-white"
     >
       <div className="w-full mt-20">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold ">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
           {titleComponent}
         </h2>
       </div>
@@ -84,6 +91,7 @@ export const Card = ({ rotate, scale, children}) => (
     rotateX: rotate,
     scale,
     transformOrigin: "center center",
+    willChange: "transform",
     boxShadow:
       "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
   }}
@@ -93,7 +101,7 @@ export const Card = ({ rotate, scale, children}) => (
 >
   <div className="w-full h-full flex flex-col md:flex-row 
                   overflow-y-auto rounded-2xl bg-zinc-900 p-6 sm:p-8 relative"
-       style={{ transformStyle: "preserve-3d" }}>
+       style={{ transformStyle: "preserve-3d", willChange: "transform" }}>
     {children}
   </div>
 </motion.div>
