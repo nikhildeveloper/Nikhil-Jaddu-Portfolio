@@ -64,7 +64,7 @@ import profileimg from "../../assets/profileimg.jpg"
 export function AnimatedPinDemo() {
   return (
     <div className="w-full flex items-center justify-center px-4 sm:px-8 md:px-0">
-      <PinContainer title="View Resume" href="https://twitter.com/mannupaaji">
+      <PinContainer title="View Resume" href="https://drive.google.com/file/d/1uOWu18G-aQGLmRYAayLrTN78DL1O4ptD/view?usp=sharing">
         <div className="flex basis-full flex-col p-4 sm:p-6 tracking-tight text-slate-100/50 
                         w-[20rem] h-[20rem] sm:w-[24rem] sm:h-[24rem] md:w-[28rem] md:h-[28rem]">
           

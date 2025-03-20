@@ -170,12 +170,7 @@
 //     }}
 //     className="w-full max-w-full sm:max-w-3xl md:max-w-5xl 
                 
-//                border-4 border-[#6C6C6C] p-4 sm:p-6 
-//                bg-[#222222] rounded-[30px] shadow-2xl relative"
-//   >
-//     {/* ✅ Fix: Allows scrolling when content overflows */}
-//     <div className="h-full w-full flex flex-col md:flex-row 
-//                     overflow-y-auto rounded-2xl bg-zinc-900 p-4 sm:p-6 relative">
+//                border-4 border-[#6C6C6C] p-4 sm:p-6 relative">
 //       {React.cloneElement(children, { cards: ProjectCards })}
 //     </div>
 //   </motion.div>
@@ -301,7 +296,7 @@ export const ContainerScroll = ({ titleComponent, children }) => {
   const translate = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <div className="relative h-auto flex items-center justify-center p-2 md:p-10 overflow-hidden max-w-screen-lg mx-auto " 
+    <div className="relative h-auto flex items-center justify-center p-2 md:p-10 overflow-hidden max-w-[1800px] mx-auto" 
     style={{ minHeight: "fit-content", height: "auto", maxHeight: "fit-content" }}
     ref={containerRef}>
 
@@ -336,8 +331,8 @@ export const Header = ({ translate, titleComponent }) => {
     </p> */}
 
     {/* ✅ Responsive Title */}
-    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold ">
-      Projects
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-10">
+      Skills
     </h2>
   </div>
 </motion.div>
@@ -356,12 +351,12 @@ export const Card = ({ rotate, scale, children}) => (
     boxShadow:
       "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
   }}
-  className="w-fit max-w-full sm:max-w-3xl md:max-w-5xl 
-             border-4 border-[#6C6C6C] p-4 sm:p-6 
+  className="w-full max-w-full sm:max-w-8xl md:max-w-[1400px] lg:max-w-[1600px]
+             border-4 border-[#6C6C6C] p-8 sm:p-10 
              bg-[#222222] rounded-[30px] shadow-2xl relative"
 >
-  <div className="w-full flex flex-col md:flex-row 
-                  overflow-hidden rounded-2xl bg-zinc-900 p-4 sm:p-6 relative">
+  <div className="w-full h-full flex flex-col md:flex-row 
+                  overflow-y-auto rounded-2xl bg-zinc-900 p-8 sm:p-10 relative">
     {children}
   </div>
 </motion.div>

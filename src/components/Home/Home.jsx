@@ -336,22 +336,25 @@ function Home() {
         </div>
 
         <div id="projects" className="w-full h-full bg-black">
-          <h2 className="max-w-7xl pt-40 pl-4 mx-auto text-xl md:text-5xl font-bold text-white dark:text-neutral-200 font-sans">
+          <h2 className="max-w-7xl pt-40 mx-auto text-2xl md:text-5xl font-bold text-white dark:text-neutral-200 font-sans text-center">
             Projects
           </h2>
-          <Carousel items={cards1} />
+          <div className="flex justify-center items-center w-full">
+            <Carousel items={cards1} />
+          </div>
         </div>
 
-        <div className="relative w-full overflow-hidden">
+        <div id='skills' className="relative w-full overflow-hidden">
           <ShootingStars />
-          <ContainerScroll titleComponent={"Projects"}>
-            <CardGrid/>
+          <ContainerScroll titleComponent={"Technical Skills"}>
+          <InfiniteSkills />
+            {/* <CardGrid/> */}
           </ContainerScroll>
         </div>
 
-        <div id="skills" className="relative w-full">
+        {/* <div id="skills" className="relative w-full">
           <InfiniteSkills />
-        </div>
+        </div> */}
 
         <div className="relative w-full flex flex-col items-start justify-center py-10 px-6 sm:px-12">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 mt-40 self-center text-center">
